@@ -1,0 +1,106 @@
+section {
+    background-image: url(./Dashboard\ Login\ Dark\ Theme.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 157px;
+    padding-bottom: 157px;
+    padding-left: 466px;
+    padding-right: 467px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 64px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 39px;
+}
+
+p {
+    color: #FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 36px;
+}
+
+.name {
+    background-color: #224956;
+    border-style: hidden;
+    border-radius: 0.5rem;
+    width: 300px;
+    height: 45px;
+    color: #FFFFFF;
+    padding-left: 20px;
+}
+
+.password {
+    background-color: #224956;
+    border-style: hidden;
+    border-radius: 0.5rem;
+    width: 300px;
+    height: 45px;
+    color: #FFFFFF;
+    padding-left: 20px;
+}
+
+::placeholder {
+    color: #FFFFFF;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 17px;
+    margin: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border-style: hidden;
+    box-shadow: none;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    background: #224956;
+    
+}
+
+input[type="checkbox"]:checked:after {
+    content: "✔";
+    color: #FFFFFF;
+}
+
+.check {
+    color: #FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 108px;
+    height: 17px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.button {
+    width: 300px;
+    height: 45px;
+    background-color: #20DF7F;
+    border-radius: 0.5rem;
+    border-style: hidden;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 20px;
+}
+.all {
+    display: flex;
+    margin-left: 150px;
+}
+a {
+    position: absolute;
+    color: #20DF7F;
+    text-decoration: none;
+    width: 128px;
+    height: 17px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 70px;
+}
