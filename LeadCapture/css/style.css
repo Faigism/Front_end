@@ -1,0 +1,153 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem 1.2rem;
+}
+
+.left-header a {
+    color: #2a3542;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 2rem 3.6rem;
+}
+
+.right-header ul {
+    display: flex;
+    padding-left: 22.5rem;
+}
+
+.right-header a {
+    color: #787b7f;
+    font-weight: 500;
+    padding-left: 2.2rem;
+    letter-spacing: 1.1px;
+}
+
+li :hover {
+    color: black;
+}
+
+.right-buynow a {
+    color: white;
+    background-color: #0161f2;
+    font-size: 14px;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    margin-right: 4rem;
+}
+
+.right-buynow :hover {
+    background-color: rgb(56, 56, 197);
+}
+
+/* Main Section start */
+/* left-pages start */
+.l-r-pages {
+    background-image: url("https://sb-ui-kit-pro.startbootstrap.com/assets/img/backgrounds/pattern-shapes.png");
+    background-color: #6900c7;
+    display: flex;
+    align-items: center;
+}
+
+.left-pages {
+    padding: 14rem 5rem;
+}
+
+.start-today {
+    background-color: white;
+    display: inline-block;
+    border-radius: 10rem;
+    padding: 0.5em 1em;
+    font-size: 0.75em;
+    font-weight: 400;
+    color: rgb(105, 0, 199);
+    margin-bottom: 1rem;
+}
+
+.h1-header h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.page-header p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.15rem;
+}
+
+/* left-pages end */
+.sign-up {
+    color: rgb(0, 97, 242);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1.5rem;
+}
+
+.right-pages {
+    width: 50%;
+    padding-right: 4rem;
+    
+}
+
+.sign-up {
+    background-color: #f8f8f9;
+}
+
+.form {
+    padding: 1.35rem;
+    background-color: white;
+    font-size: 14px;
+    color: rgb(105, 112, 122);
+}
+
+.form-n-l {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.form-n {
+    padding-right: 2.5rem;
+}
+
+
+#f-name,
+#l-name {
+    padding: 0.8rem 3.8rem;
+    border-radius: 6px;
+    border: 1px solid #c5ccd6;
+}
+
+#email,
+#company {
+    padding: 0.8rem 14rem;
+    border-radius: 6px;
+    border: 1px solid #c5ccd6;
+}
+
+.form-e {
+    padding-bottom: 1rem;
+}
+
+.form-e-c {
+    padding-bottom: 2rem;
+}
+
+.btn-download a {
+    padding: 0.9rem 16.2rem;
+    color: white;
+    background-color: #0161f2;
+    border-radius: 6px;
+    border: 1px solid;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-download {
+    padding-bottom: 1rem;
+}
+
+.btn-download :hover {
+    background-color: #0045ad
+}

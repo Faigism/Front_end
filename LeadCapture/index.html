@@ -8,28 +8,29 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/faviconV2.jpg">
+    <link href="https://fonts.cdnfonts.com/css/metropolis-4" rel="stylesheet">
     <title>Lead Capture - SB UI Kit Pro</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="left-header">
                 <a href="#">SB UI Kit Pro</a>
             </div>
             <div class="right-header">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#" class="home">Home</a>
                     </li>
                     <li>
-                        <a href="#">Landings</a>
+                        <a href="#" class="land">Landings</a>
                     </li>
                     <li>
-                        <a href="#">Pages</a>
+                        <a href="#" class="page">Pages</a>
                     </li>
                     <li>
-                        <a href="#">Documentation</a>
+                        <a href="#" class="doc">Documentation</a>
                     </li>
                 </ul>
             </div>
@@ -39,53 +40,66 @@
         </nav>
     </header>
     <main>
-        <div>
+        <section>
+            <div class="l-r-pages">
+                <div class="left-pages">
+                    <div class="start-today">
+                        Start today!
+                    </div>
+                    <div class="h1-header">
+                        <h1>
+                            Get more leads, more customers, and more revenue
+                        </h1>
+                    </div>
+                    <div class="page-header">
+                        <p>
+                            Stop losing leads because of a non-optimized landing page. Start converting your users to
+                            paying
+                            customers and winning more sales today with a new landing page!
+                        </p>
+                    </div>
+                </div>
+                <form class="right-pages">
+                    <div class="sign-up">
+                        Sign up and get our free e-book!
+                    </div>
+                    <div class="form">
+                        <div class="form-n-l">
+                            <div class="form-n">
+                                <label for="f-name">First Name</label>
+                                <br>
+                                <input type="text" name="fname" id="f-name">
+                            </div>
+                            <div>
+                                <label for="l-name">Last Name</label>
+                                <br>
+                                <input type="text" name="lname" id="l-name">
+                            </div>
+                        </div>
+                        <div class="form-e-c">
+                            <div class="form-e">
+                                <label for="email">Email address</label>
+                                <br>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="company">Company or Organization</label>
+                                <br>
+                                <input type="text" id="company">
+                            </div>
+                        </div>
+                        
+                        <div class="btn-download">
+                            <a href="#">Download Now</a>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
 
-        </div>
-        <div class="left-pages">
-            <div class="start-today">
-                Start Today
-            </div>
-            <div class="h1-header">
-                <h1>
-                    Get more leads, more customers, and more revenue
-                </h1>
-            </div>
-            <div class="page-header">
-                <p>
-                    Stop losing leads because of a non-optimized landing page. Start converting your users to paying
-                    customers and winning more sales today with a new landing page!
-                </p>
-            </div>
-        </div>
-        <div class="right-pages">
-            <div class="sign-up">
-                Sign up and get our free e-book!
-            </div>
-            <div>
-                <div>
-                    <label for="f-name">First Name</label>
-                    <br>
-                    <input type="text" name="fname" id="f-name">
-                </div>
-                <div>
-                    <label for="l-name">Last Name</label>
-                    <br>
-                    <input type="text" name="lname" id="l-name">
-                </div>
-            </div>
-            <div>
-                <label for="email">Email address</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div>
-                <label for="company">Company or Organization</label>
-                <input type="text" id="company">
-            </div>
-            <div class="btn-download">
-                <button>Download Now</button>
-            </div>
-        </div>
+        </section>
+
+
         <section>
             <div>
                 <div>
@@ -275,7 +289,8 @@
                 Copyright © Your Website 2021
             </div>
             <div>
-                <a href="#">Privacy Policy .</a>
+                <a href="#">Privacy Policy</a>
+                .
                 <a href="#">Terms & Conditions</a>
             </div>
         </div>
