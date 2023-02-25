@@ -14,7 +14,7 @@
 
 .right-header ul {
     display: flex;
-    padding-left: 22.5rem;
+    padding-left: 27.5rem;
 }
 
 .right-header a {
@@ -58,11 +58,12 @@ li :hover {
     background-color: white;
     display: inline-block;
     border-radius: 10rem;
-    padding: 0.5em 1em;
+    padding: 0.2em 1.3em;
     font-size: 0.75em;
     font-weight: 400;
     color: rgb(105, 0, 199);
     margin-bottom: 1rem;
+    background-color: #e4ddf7;
 }
 
 .h1-header h1 {
@@ -70,6 +71,7 @@ li :hover {
     font-weight: 500;
     font-size: 2.5rem;
     line-height: 1.2;
+    margin-bottom: 0.8rem;
 }
 
 .page-header p {
@@ -82,22 +84,22 @@ li :hover {
     color: rgb(0, 97, 242);
     font-size: 16px;
     font-weight: 500;
-    padding: 1.5rem;
+    padding: 1.5rem 1.35rem;
+    background-color: #f8f8f9;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+    ;
 }
 
 .right-pages {
-    width: 50%;
-    padding-right: 4rem;
-    
-}
-
-.sign-up {
-    background-color: #f8f8f9;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 5.7rem;
+    margin-bottom: 2rem;
 }
 
 .form {
     padding: 1.35rem;
-    background-color: white;
     font-size: 14px;
     color: rgb(105, 112, 122);
 }
@@ -105,6 +107,7 @@ li :hover {
 .form-n-l {
     display: flex;
     padding-bottom: 1rem;
+    color: #69707a;
 }
 
 .form-n {
@@ -114,16 +117,22 @@ li :hover {
 
 #f-name,
 #l-name {
-    padding: 0.8rem 3.8rem;
+    width: 18rem;
+    padding: 0.8rem;
     border-radius: 6px;
     border: 1px solid #c5ccd6;
+    color: #69707a;
+    outline:none;
 }
 
 #email,
 #company {
-    padding: 0.8rem 14rem;
+    width: 38.5rem;
+    padding: 0.8rem;
     border-radius: 6px;
     border: 1px solid #c5ccd6;
+    color: #69707a;
+    outline:none;
 }
 
 .form-e {
@@ -132,6 +141,7 @@ li :hover {
 
 .form-e-c {
     padding-bottom: 2rem;
+    color: #69707a;
 }
 
 .btn-download a {
@@ -150,4 +160,13 @@ li :hover {
 
 .btn-download :hover {
     background-color: #0045ad
+}
+
+.par-here {
+    text-align: right;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #d4dae3;
 }
