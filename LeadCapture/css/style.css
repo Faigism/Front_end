@@ -51,6 +51,18 @@ li :hover {
     align-items: center;
 }
 
+.svg-border1 {
+    background-image: url("https://sb-ui-kit-pro.startbootstrap.com/assets/img/backgrounds/pattern-shapes.png");
+    background-color: #6900c7;
+    height: 9rem;
+}
+
+.svg-border2 {
+    background-color: #f2f6fc;
+    height: 6rem;
+    opacity: 1;
+}
+
 .left-pages {
     padding: 14rem 6rem;
 }
@@ -175,7 +187,6 @@ li :hover {
 
 .logo1 img {
     width: 13rem;
-    
     padding-left: 1rem;
 }
 
@@ -240,7 +251,7 @@ li :hover {
     background: rgb(228, 221, 247);
     border-radius: 50px;
     width: 5rem;
-    padding: 18px;
+    padding: 20px;
     margin-bottom: 1rem;
 }
 
@@ -267,9 +278,9 @@ li :hover {
 
 .card-2 img {
     background: #daefed;
-    border-radius: 5rem;
+    border-radius: 50px;
     width: 5rem;
-    padding: 18px;
+    padding: 20px;
     margin-bottom: 1rem;
 }
 
@@ -295,9 +306,9 @@ li :hover {
 
 .card-3 img {
     background: #d9e7fb;
-    border-radius: 5rem;
+    border-radius: 50px;
     width: 5rem;
-    padding: 18px;
+    padding: 20px;
     margin-bottom: 1rem;
 }
 
@@ -323,9 +334,9 @@ li :hover {
 
 .card-4 img {
     background: #f2eee3;
-    border-radius: 5rem;
+    border-radius: 50px;
     width: 5rem;
-    padding: 18px;
+    padding: 20px;
     margin-bottom: 1rem;
 }
 
@@ -466,12 +477,14 @@ li :hover {
 .ftr-list a:hover {
     text-decoration: underline;
 }
-.my-hr{
+
+.my-hr {
     margin-left: 4.8rem;
     margin-right: 4.8rem;
     opacity: 0.3;
     margin-bottom: 3rem;
 }
+
 .copy-ftr {
     display: flex;
     justify-content: space-between;
@@ -490,4 +503,3 @@ li :hover {
 .privacy-ftr a:hover {
     text-decoration: underline;
 }
-
