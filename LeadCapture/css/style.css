@@ -1,10 +1,10 @@
+/* header navbar part start */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 1rem;
 }
-
 
 .left-header a {
     color: #2a3542;
@@ -41,9 +41,8 @@ li :hover {
 .right-buynow :hover {
     background-color: rgb(56, 56, 197);
 }
-
+/* header navbar part end */
 /* Main Section start */
-/* left-pages start */
 .l-r-pages {
     background-image: url("https://sb-ui-kit-pro.startbootstrap.com/assets/img/backgrounds/pattern-shapes.png");
     background-color: #6900c7;
@@ -57,11 +56,7 @@ li :hover {
     height: 9rem;
 }
 
-.svg-border2 {
-    background-color: #f2f6fc;
-    height: 6rem;
-    opacity: 1;
-}
+
 
 .left-pages {
     padding: 14rem 6rem;
@@ -93,6 +88,7 @@ li :hover {
 }
 
 /* left-pages end */
+/* right-form start */
 .sign-up {
     color: rgb(0, 97, 242);
     font-size: 16px;
@@ -127,7 +123,6 @@ li :hover {
     padding-right: 2.5rem;
 }
 
-
 #f-name,
 #l-name {
     width: 18rem;
@@ -148,13 +143,13 @@ li :hover {
     outline: none;
 }
 
-.form-e {
-    padding-bottom: 1rem;
-}
-
 .form-e-c {
     padding-bottom: 2rem;
     color: #69707a;
+}
+
+.form-e {
+    padding-bottom: 1rem;
 }
 
 .btn-download a {
@@ -174,7 +169,8 @@ li :hover {
 .btn-download :hover {
     background-color: #0045ad
 }
-
+/* right-form end */
+/* section-part logo start */
 .par-here {
     text-align: right;
     font-weight: 700;
@@ -199,6 +195,13 @@ li :hover {
     padding: 4rem;
 }
 
+.svg-border2 {
+    background-color: #f2f6fc;
+    height: 6rem;
+    opacity: 1;
+}
+/* section-part logo end */
+/* section cards start */
 .marketing {
     padding: 7rem 5rem;
 }
@@ -350,11 +353,13 @@ li :hover {
     color: #909193;
     font-weight: 400;
 }
-
+/* section cards end */
+/* section created account start */
 .started {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid rgb(228, 224, 224);
 }
 
 .created-account {
@@ -408,11 +413,9 @@ li :hover {
 #_contact:hover {
     background-color: rgb(243, 239, 239);
 }
-
-.started {
-    border-bottom: 1px solid rgb(228, 224, 224);
-}
-
+/* section created account end */
+/* footer section start */
+/* footer-part left start */
 .footer-part-main {
     color: #a7aeb8;
     padding-top: 6rem;
@@ -434,30 +437,14 @@ li :hover {
 .design-made {
     margin-bottom: 1rem;
 }
-
-.insta {
-    margin-right: 4px;
+.pin-logo{
+letter-spacing: 7px;
 }
-
-.face {
-    margin-right: 4px;
-}
-
-.git {
-    margin-right: 4px;
-}
-
+/* footer-part left end */
+/* product-list start */
 .prdct {
     margin-left: 14rem;
     margin-right: 10.6rem;
-}
-
-.tech {
-    padding-right: 9rem;
-}
-
-.include {
-    margin-right: 10.5rem;
 }
 
 .ftr-head {
@@ -477,14 +464,26 @@ li :hover {
 .ftr-list a:hover {
     text-decoration: underline;
 }
-
+/* product-list end */
+/* tech-list start */
+.tech {
+    padding-right: 9rem;
+}
+/* tech-list end */
+/* include-list start */
+.include {
+    margin-right: 10.5rem;
+}
+/* include-list end */
+/* hr style start*/
 .my-hr {
     margin-left: 4.8rem;
     margin-right: 4.8rem;
     opacity: 0.3;
     margin-bottom: 3rem;
 }
-
+/* hr style end */
+/* copyright part start */
 .copy-ftr {
     display: flex;
     justify-content: space-between;
@@ -503,3 +502,4 @@ li :hover {
 .privacy-ftr a:hover {
     text-decoration: underline;
 }
+/* copyright part end */
