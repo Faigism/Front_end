@@ -1,0 +1,57 @@
+#wrapper {
+    background-color: #001119;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .product {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #systems-expert {
+    width: 50%;
+    text-align: center;
+    background-color:#890123; 
+  }
+  
+  #ml-expert {
+    width: 30%;
+    height: 75px;
+    background-color: #f37f1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #algo-expert {
+    width: 75%;
+    background-color: #626ee3;
+    order: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #frontend-expert {
+    width: 40%;
+    margin-top: auto;
+    background-color: #12967e;
+    order: 1;
+  }
+  
+  #programming-expert {
+    background-color: #f21a3f;
+    flex-grow: 1;
+    order: 1;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  

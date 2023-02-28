@@ -1,0 +1,30 @@
+.shortly {
+    font-size: 25px;
+    padding-left: 8rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+    align-items: center;
+}
+
+/* ul,
+li {
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    width: 265px;
+    
+}
+.header-list{
+   padding-right: 50%;
+   
+}
+.login {
+    padding-right: 8rem;
+    font-size: 15px;
+    font-weight: 700;
+    color: #9E9AA8;
+} */
