@@ -21,6 +21,10 @@
     height: 20px;
 }
 
+.icon-item img:hover{
+    
+}
+
 .icons{
     gap: 25px;
     display: flex;
@@ -129,7 +133,6 @@
 
 .card:hover{
     cursor: pointer;
-    
 }
 .card-1{
     width: 17rem;
@@ -144,6 +147,35 @@
     box-shadow: 0 22px 33px 0 rgb(0 0 0 / 16%);
 }
 
+
+.card-1:hover svg path{
+    stroke: white;
+}
+.card-2:hover svg path{
+    stroke: white;
+}
+.card-3:hover svg path{
+    stroke: white;
+}
+.card-4:hover svg path{
+    stroke: white;
+}
+
+.card-1:hover h2{
+    color: white;
+}
+
+.card-2:hover h2{
+    color: white;
+}
+
+.card-3:hover h2{
+    color: white;
+}
+
+.card-4:hover h2{
+    color: white;
+}
 
 .card-2{
     width: 17rem;
