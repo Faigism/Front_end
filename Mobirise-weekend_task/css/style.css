@@ -1,17 +1,16 @@
 /* header section start */
+
 .container{
     max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .header-navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 0.7rem;
-    padding-left: 4rem;
-    padding-right: 5rem;
+    padding: 0.7rem 5rem;
+    background-color: rgba(255, 255, 255, 0.2);;
 }
 
 .navbar-brand{
@@ -54,4 +53,109 @@
     gap: 18px;
     
 }
-/* header section end */
+/*  header section end  */
+/* main-section top start */
+/* main-section bottom start */
+.main-section1{
+    background-image: url("https://mobirise.com/extensions/naturalm4/natural-cosmetic/assets/images/background9.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.5;
+    min-height: 950px;
+}
+
+.main-headr1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 8rem;
+}
+
+.main-header-left{
+    width: 50%;
+    margin-top: 10rem;
+}
+
+.left-side-about p{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.left-side-about h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding-bottom: 1rem;
+}
+
+.btn-header{
+    margin-top: 24px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.btn-header a{
+    border: 2px solid ;
+    padding: 0.6rem 2.8rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+    border-color: #ff2b09;
+    color: #2b2b2b;
+}
+
+.btn-header a:hover{
+    color: white;
+    background-color: #ff2b09;
+}
+
+.prdct img{
+    margin-top: 6.5rem;
+    width: 85%;
+}
+/* main-section top end */
+/* main-section bottom end */
+/* main-section about start */
+.caption-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.cards-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card{
+    padding: 10px 10px 60px;
+    width: 31%;
+}
+
+.card .img{
+    background-color: #f2f2f2;
+    padding: 65px;
+}
+
+.card .img img{
+    margin-bottom: 1.5rem;
+}
+
+.card .img h3{
+    margin-bottom: 1rem;
+}
+
+.card .img p{
+    line-height: 1.5;
+}
+/* main-section about end */
+
