@@ -2,7 +2,8 @@
 
 .container{
     max-width: 1440px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-navbar{
@@ -10,7 +11,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.7rem 5rem;
-    background-color: rgba(255, 255, 255, 0.2);;
+    background-color: #f4f2f1;
 }
 
 .navbar-brand{
@@ -51,7 +52,6 @@
     padding-left: 2.4rem;
     display: flex;
     gap: 18px;
-    
 }
 /*  header section end  */
 /* main-section top start */
@@ -59,14 +59,28 @@
 .main-section1{
     background-image: url("https://mobirise.com/extensions/naturalm4/natural-cosmetic/assets/images/background9.jpg");
     background-size: cover;
-    background-position: 50% 50%;
+    background-position:50% 50%;
     background-repeat: no-repeat;
     position: relative;
-    opacity: 0.5;
     min-height: 950px;
 }
 
+.main-section1::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.4;
+}
+
 .main-headr1{
+    position: relative;
+    z-index: 9;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -82,6 +96,7 @@
     font-family: 'EB Garamond', serif;
     font-size: 1.4rem;
     line-height: 1.5;
+    padding-bottom: 1rem;
 }
 
 .left-side-about h2{
@@ -99,7 +114,7 @@
 
 .btn-header a{
     border: 2px solid ;
-    padding: 0.6rem 2.8rem;
+    padding: 0.7rem 2.8rem;
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 600;
@@ -158,4 +173,97 @@
     line-height: 1.5;
 }
 /* main-section about end */
+/* main-section cosmetic start */
+.cosmetic-about{
+    display: flex;
+    align-items: center;
+}
 
+.left-section-csmtc{
+    padding: 0rem 6rem 0rem 11rem;
+}
+
+.csmtc-content h3{
+    font-size: 47px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding-bottom: 1rem;
+}
+
+.csmtc-content p{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #8a8a8a;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid;
+}
+
+.csmtc-type .safety{
+    width: 25px;
+    margin-left: 22.5rem;
+}
+
+.csmtc-type .quality{
+    width: 25px;
+    margin-left: 21.8rem;
+}
+
+.csmtc-type .vegan{
+    width: 25px;
+    margin-left: 22.8rem;
+}
+
+.csmtc-type p{
+    padding-top: 1.6rem;
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16.80px;
+    color: black;
+}
+
+.csmtc-img img{
+    margin-right: 4rem;
+    margin-top: 5rem;
+    width: 40rem;
+    height: 40rem;
+}
+/* main-section cosmetic end */
+/* main-section 8things start */
+.card-checklist{
+    background-color: #f2f2f2;
+    margin: 10rem 4rem;
+    padding: 13rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 700;
+}
+
+.content-8thing{
+    margin-bottom: 1.4rem;
+}
+
+.content-8thing h3{
+    font-size: 47px;
+    text-transform: uppercase;
+    color: rgb(35, 35, 35);
+    line-height: 1.1;
+}
+
+.link-check p a{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(98, 98, 98);
+}
+
+.link-check p a:hover{
+    color: #ff0000;
+    border-bottom: 2px solid #ff0000;
+}
+/* main-section 8things end */
