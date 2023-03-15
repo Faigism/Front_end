@@ -1,0 +1,21 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.header-part {
+    background-color: #f0f3f2;
+}
+
+.header-left {
+    font-size: 14px;
+    font-weight: 500;
+    color: #5c6c75;
+}
+
+.btn-my:hover {
+    background-color: #c1c7c6;
+}
+
+.main-chart2{
+    background-image: url('');
+}
