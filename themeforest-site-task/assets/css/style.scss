@@ -1,0 +1,25 @@
+@import "_reset";
+
+.nav-top{
+    background-color: #262626;
+    .hdr-img{
+        margin-left: 1.3rem;
+        width: 152px;
+        
+    }
+}
+
+.hdr-btn{
+    margin-right: 1.3rem;
+    a{
+        border: none;
+        background-color: #7aa93c;
+        padding: 6px 20px;
+        border-radius: 5px;
+        color: white;
+        font-size: 14px;
+        &:hover{
+            background-color: #6f9a37;
+        }
+    }
+}

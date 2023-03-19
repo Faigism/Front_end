@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+}
+body ul {
+  list-style: none;
+}
+
+.nav-top {
+  background-color: #262626;
+}
+.nav-top .hdr-img {
+  margin-left: 1.3rem;
+  width: 152px;
+}
+
+.hdr-btn {
+  margin-right: 1.3rem;
+}
+.hdr-btn a {
+  border: none;
+  background-color: #7aa93c;
+  padding: 6px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+}
+.hdr-btn a:hover {
+  background-color: #6f9a37;
+}/*# sourceMappingURL=style.css.map */
