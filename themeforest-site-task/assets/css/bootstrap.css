@@ -8144,7 +8144,19 @@ textarea.form-control-lg {
 }
 
 .pe-5 {
-  padding-right: 3rem !important;
+  padding-right: 3.6rem !important;
+}
+
+.pe-6 {
+  padding-right: 4rem !important;
+}
+
+.pe-7 {
+  padding-right: 4.1rem !important;
+}
+
+.pe-8 {
+  padding-right: 5rem !important;
 }
 
 .pb-0 {
@@ -8213,6 +8225,10 @@ textarea.form-control-lg {
 
 .gap-4 {
   gap: 1.5rem !important;
+}
+
+.gap-4-5 {
+  gap: 2.7rem !important;
 }
 
 .gap-5 {

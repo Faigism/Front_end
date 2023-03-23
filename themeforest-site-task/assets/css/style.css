@@ -11,25 +11,227 @@ body ul {
   list-style: none;
 }
 
-.nav-top {
-  background-color: #262626;
+.header-nav {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
 }
-.nav-top .hdr-img {
+.header-nav .nav-top {
+  padding: 20px 2px;
+  background-color: #262626;
+  position: relative;
+}
+.header-nav .nav-top .hdr-img {
   margin-left: 1.3rem;
   width: 152px;
 }
 
+@font-face {
+  font-family: nunito_md;
+  src: url("../fonts/Nunito-Medium.ttf");
+}
+@font-face {
+  font-family: nunito_bold;
+  src: url("../fonts/Nunito-Bold.ttf");
+}
 .hdr-btn {
   margin-right: 1.3rem;
+  position: absolute;
+  right: 0;
 }
 .hdr-btn a {
   border: none;
   background-color: #7aa93c;
-  padding: 6px 20px;
+  padding: 9px 21px;
   border-radius: 5px;
   color: white;
   font-size: 14px;
+  box-shadow: 0 2px 0 #6f9a37;
+  font-family: nunito_md;
 }
 .hdr-btn a:hover {
   background-color: #6f9a37;
+}
+
+@media (max-width: 767px) {
+  .hdr-nav {
+    opacity: 0;
+  }
+  .spin-cog {
+    display: none;
+  }
+  .travel-content div p {
+    font-size: 18px;
+  }
+  .travel-content div h1 {
+    font-size: 31px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .nav-bottom .menu-bars {
+    display: none;
+  }
+  .hdr-nav {
+    display: flex;
+    justify-content: end;
+  }
+  .hdr-nav li a {
+    font-size: 14px;
+  }
+  .travel-content p {
+    font-size: 20px;
+  }
+  .travel-content h1 {
+    font-size: 55px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+  .nav-bottom .menu-bars {
+    display: none;
+  }
+  .hdr-nav {
+    display: flex;
+    justify-content: end;
+  }
+  .hdr-nav .nav-list li {
+    padding: 0 0 0 0.2rem;
+  }
+  .travel-content p {
+    font-size: 20px;
+  }
+  .travel-content h1 {
+    font-size: 55px;
+  }
+}
+@media (min-width: 1400px) {
+  .nav-bottom .menu-bars {
+    display: none;
+  }
+  .hdr-nav {
+    display: flex;
+    justify-content: end;
+  }
+  .hdr-nav .nav-list li {
+    padding: 0 0 0 2rem;
+  }
+  .travel-content div p {
+    font-size: 20px;
+  }
+  .travel-content div h1 {
+    font-size: 55px;
+  }
+}
+.nav-bottom-bg {
+  background-color: #fff;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+}
+.nav-bottom-bg .nav-bottom {
+  margin-top: 0.5rem;
+}
+
+.hdr-nav {
+  display: flex;
+  align-items: center;
+}
+.hdr-nav .nav-list {
+  padding-top: 1rem;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  z-index: 999;
+}
+.hdr-nav .nav-list li a {
+  padding: 24px 0 40px;
+  transition: 0.6s;
+  color: #333;
+  font-family: nunito_bold;
+}
+.hdr-nav .nav-list li a:hover {
+  color: #6168FF;
+}
+.hdr-nav .nav-list .drop-nav {
+  position: relative;
+}
+.hdr-nav .nav-list .drop-nav:hover .dropdown-content {
+  display: block;
+  background-color: white;
+  color: #262626;
+}
+.hdr-nav .nav-list .drop-nav:hover .dropdown-content a {
+  color: #333;
+}
+.hdr-nav .nav-list .drop-nav:hover .dropdown-content a:hover {
+  background-color: #6168FF;
+  color: white;
+}
+.hdr-nav .nav-list .dropdown-content {
+  margin-top: 2.3rem;
+  width: 200px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -25px;
+  border-top: 2px solid #6168FF;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.mn-bg {
+  background-image: url("https://getmasum.com/html-preview/nour/assets/img/slider/1.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 650px;
+  margin-top: 10rem;
+}
+
+.bg-opacity {
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 650px;
+}
+
+.travel-content {
+  font-family: nunito_md;
+  margin-top: 13rem;
+  color: white;
+}
+.travel-content div p {
+  line-height: 30px;
+}
+.travel-content div h1 {
+  font-family: nunito_bold;
+  line-height: 1.4;
+}
+.travel-content div a {
+  text-transform: uppercase;
+  background-color: #6168FF;
+  border: 2px solid #6168FF;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 13px;
+  padding: 13px 30px;
+  transition: 0.3s;
+  font-weight: 700;
+}
+.travel-content div a:hover {
+  border: 2px solid white;
+  color: #fff;
+}
+
+.spin-cog {
+  position: absolute;
+  position: fixed;
+  top: 14rem;
+  background-color: #6168FF;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 12px 12px;
+}
+.spin-cog i {
+  font-size: 25px;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
