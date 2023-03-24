@@ -28,7 +28,7 @@ body ul {
   width: 152px;
 }
 
-.spin-cog {
+.fix-icons .spin-cog {
   position: absolute;
   position: fixed;
   top: 14rem;
@@ -36,12 +36,37 @@ body ul {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   padding: 12px 12px;
+  cursor: pointer;
 }
-.spin-cog i {
+.fix-icons .spin-cog i {
   font-size: 25px;
   color: white;
 }
+.fix-icons .rocket-i {
+  background-color: #6168FF;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  transition: 0.6s;
+}
+.fix-icons .rocket-i:hover {
+  background-color: #211E3B;
+}
+.fix-icons .rocket-i .rocket-icon {
+  color: white;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
 
+@font-face {
+  font-family: nunito_regular;
+  src: url("../fonts/Nunito-Regular.ttf");
+}
 @font-face {
   font-family: nunito_md;
   src: url("../fonts/Nunito-Medium.ttf");
@@ -49,6 +74,14 @@ body ul {
 @font-face {
   font-family: nunito_bold;
   src: url("../fonts/Nunito-Bold.ttf");
+}
+@font-face {
+  font-family: nunito_semibold;
+  src: url("../fonts/Nunito-SemiBold.ttf");
+}
+@font-face {
+  font-family: nunito_extrabold;
+  src: url("../fonts/Nunito-ExtraBold.ttf");
 }
 @font-face {
   font-family: "Material Icons";
@@ -89,6 +122,12 @@ body ul {
   .choose-img {
     margin-bottom: 30px;
   }
+  .deals-title span {
+    font-size: 45px;
+  }
+  .single-deal {
+    width: 350px;
+  }
 }
 @media (min-width: 767px) and (max-width: 992px) {
   .nav-bottom .menu-bars {
@@ -111,6 +150,12 @@ body ul {
     margin-top: 40px;
     margin-left: 0;
   }
+  .deals-title span {
+    font-size: 73px;
+  }
+  .single-deal {
+    width: 600px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1400px) {
   .nav-bottom .menu-bars {
@@ -128,6 +173,12 @@ body ul {
   }
   .travel-content h1 {
     font-size: 55px;
+  }
+  .deals-title span {
+    font-size: 73px;
+  }
+  .single-deal {
+    width: 450px;
   }
 }
 @media (min-width: 1400px) {
@@ -149,6 +200,12 @@ body ul {
   }
   .choose-img {
     margin-left: 30px;
+  }
+  .deals-title span {
+    font-size: 73px;
+  }
+  .single-deal {
+    width: 410px;
   }
 }
 .nav-bottom-bg {
@@ -250,7 +307,10 @@ body ul {
   color: #fff;
 }
 
-.material-icons {
+.travel-about {
+  padding: 130px 0;
+}
+.travel-about .material-icons {
   font-family: "Material Icons";
   color: #6168FF;
   font-weight: normal;
@@ -258,27 +318,29 @@ body ul {
   font-size: 60px;
   line-height: 1;
 }
-
-.tr-about-section {
+.travel-about .tr-about-section {
   margin-bottom: 40px;
 }
-.tr-about-section h3 {
+.travel-about .tr-about-section h3 {
   font-size: 18px;
   margin-bottom: 15px;
 }
-.tr-about-section p {
+.travel-about .tr-about-section p {
   margin-bottom: 15px;
   color: #727272;
 }
-
-.choose-img {
+.travel-about .choose-img {
   position: relative;
   box-shadow: 18px 18px 26px 0 rgba(0, 1, 1, 0.2);
+  z-index: -1;
 }
-.choose-img img {
+.travel-about .choose-img img {
   width: 100%;
 }
-.choose-img a i {
+.travel-about .choose-img a:hover i {
+  background-color: #211E3B;
+}
+.travel-about .choose-img a i {
   background-color: #6168FF;
   color: #fff;
   font-size: 45px;
@@ -293,4 +355,116 @@ body ul {
   transform: translate(-50%, -50%);
   transition: 0.5s;
   line-height: 80px;
+}
+
+.deals-title {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: -1;
+}
+.deals-title span {
+  line-height: 1;
+  position: absolute;
+  z-index: -981;
+  font-family: nunito_extrabold;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #efefef;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.deals-title h2 {
+  z-index: -1;
+  color: #6168FF;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 1.3;
+  font-family: nunito_bold;
+  font-weight: 700;
+}
+.deals-title p {
+  font-size: 27px;
+  color: #333;
+  line-height: 25px;
+  font-family: nunito_regular;
+}
+
+.owl-stage-outer {
+  overflow: hidden;
+}
+.owl-stage-outer .owl-stage {
+  width: 3864px;
+}
+.owl-stage-outer .owl-stage .owl-item {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.owl-stage-outer .owl-stage .owl-item .single-deal {
+  margin-right: 30px;
+  border: 1px solid #ebe6de;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+  z-index: -1;
+}
+.owl-stage-outer .owl-stage .owl-item .single-deal a {
+  color: #727272;
+}
+.owl-stage-outer .owl-stage .owl-item .single-deal a img {
+  width: 100%;
+}
+.owl-stage-outer .owl-stage .owl-item .single-deal a .deal-caption {
+  padding: 25px 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+}
+.owl-stage-outer .owl-stage .owl-item .single-deal a .deal-caption div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.owl-stage-outer .owl-stage .owl-item .single-deal a .deal-caption h4 {
+  color: #333;
+  font-family: nunito_bold;
+  font-weight: 700;
+}
+.owl-stage-outer .owl-stage .owl-item .single-deal a .deal-caption span {
+  font-size: 16px;
+  font-family: nunito_semibold;
+  font-weight: 600;
+}
+
+.service {
+  margin-bottom: 30px;
+  background-color: #F4F9FF;
+  border-radius: 5px;
+  padding: 35px 35px 20px;
+}
+.service .ser-icon {
+  color: #6168FF;
+  float: left;
+  margin-right: 20px;
+}
+.service .ser-icon i {
+  font-size: 50px;
+}
+.service .ser-text {
+  overflow: hidden;
+}
+.service .ser-text h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: nunito_bold;
+  font-weight: 700;
+}
+.service .ser-text p {
+  margin-bottom: 15px;
+  color: #727272;
 }/*# sourceMappingURL=style.css.map */
