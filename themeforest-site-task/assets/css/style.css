@@ -12,6 +12,7 @@ body ul {
 }
 
 .header-nav {
+  z-index: 2;
   overflow: hidden;
   position: fixed;
   width: 100%;
@@ -254,7 +255,7 @@ body ul {
   color: white;
 }
 .hdr-nav .nav-list .dropdown-content {
-  margin-top: 2.3rem;
+  margin-top: 1.5rem;
   width: 200px;
   display: none;
   position: absolute;
@@ -467,4 +468,78 @@ body ul {
 .service .ser-text p {
   margin-bottom: 15px;
   color: #727272;
+}
+
+.gallery {
+  padding: 130px 0;
+}
+
+.portfolio-grid {
+  position: relative;
+  height: 1185px;
+}
+.portfolio-grid .row .portfolio-item {
+  margin-bottom: 30px;
+}
+.portfolio-grid .row .portfolio-item .single-gallery {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-grid .row .portfolio-item .single-gallery:hover {
+  background-color: #6168FF;
+}
+.portfolio-grid .row .portfolio-item .single-gallery:hover .gallery-icon {
+  opacity: 1;
+  right: 20px;
+  bottom: 20px;
+}
+.portfolio-grid .row .portfolio-item .single-gallery:hover .gallery-icon:hover {
+  background-color: #212a42;
+  color: #fff;
+}
+.portfolio-grid .row .portfolio-item .single-gallery:hover h4 {
+  opacity: 1;
+  top: 50%;
+  left: 30%;
+}
+.portfolio-grid .row .portfolio-item .single-gallery:hover::before {
+  opacity: 0.8;
+}
+.portfolio-grid .row .portfolio-item .single-gallery::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  background-color: #6168FF;
+  opacity: 0;
+}
+.portfolio-grid .row .portfolio-item .single-gallery img {
+  width: 100%;
+}
+.portfolio-grid .row .portfolio-item .single-gallery .gallery-icon {
+  background-color: #fff;
+  color: #333;
+  width: 45px;
+  height: 45px;
+  line-height: 46px;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+  padding-top: 3px;
+  border-radius: 50px;
+  font-size: 19px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.portfolio-grid .row .portfolio-item .single-gallery h4 {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transition: 0.5s;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */
