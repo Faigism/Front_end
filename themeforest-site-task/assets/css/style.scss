@@ -782,7 +782,7 @@
     }
 }
 
-
+// testimonial-section start
 .testimonials {
     overflow: hidden;
     margin-top: 2rem;
@@ -798,22 +798,21 @@
         .test-img {
             position: relative;
             display: inline-block;
-            width: auto;
+            width:100px;
             margin-bottom: 10px;
-
             img {
                 width: 100%;
-                width: 100px;
+                height: 100%;
                 border-radius: 50%;
+                margin-bottom: 19px;
                 display: inline-block;
                 box-shadow: 0 0 40px rgba(0, 0, 0, 0.07);
-                ;
             }
 
             &::after {
                 content: "";
                 position: absolute;
-                bottom: 0;
+                bottom: 10px;
                 right: 0;
                 background-image: url("https://getmasum.com/html-preview/nour/assets/img/quote-img.png");
                 height: 40px;
@@ -849,8 +848,9 @@
         }
     }
 }
+// testimonial-section start
 
-
+// blog-section start
 .blog {
     overflow: hidden;
     padding: 50px 0 130px 0;
@@ -902,8 +902,9 @@
         }
     }
 }
+// blog-section start
 
-
+// contact-section start
 .contact {
     form {
         background-color: #F4F9FF;
@@ -943,3 +944,109 @@
         }
     }
 }
+// contact-section start
+
+// footer-part start
+.footer{
+    margin-top: 100px;
+    background-color: #00102A;
+    padding: 250px 0 40px;
+    color: #fff;
+    clip-path: polygon(0 250px, 100% 0, 100% 100%, 0% 100%);
+    .footer-top{
+        margin-bottom: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgb(247,243,243,0.3);
+        .footer-widget{
+            margin-bottom: 30px;
+            img{
+                margin-bottom: 25px;
+                width: 150px;
+            }
+            .footer-contact-info{
+                p{
+                    margin-bottom: 15px;
+                    i{
+                        margin-right: 20px;
+                        float: left;
+                        font-size: 24px;
+                    }
+                    span{
+                        display: block;
+                        overflow: hidden;
+                    }
+                }
+            }
+            h3{
+                position: relative;
+                font-size: 17px;
+                margin-bottom: 26px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            ul{
+                padding-left: 0;
+                li{
+                    line-height: 32px;
+                    a{
+                        color: #fff;
+                        transition: .6s;
+                        &:hover{
+                            color: #6168FF;
+                        }
+                    }
+                }
+            }
+            input{
+                height: 45px;
+                line-height: 45px;
+            }
+            button{
+                background-color: #6168FF;
+                border: 2px solid #6168FF;
+                color: #fff;
+                font-size: 13px;
+                padding: 12px 30px;
+                margin-top: 10px;
+                border-radius: 4px;
+                text-transform: uppercase;
+                transition: .3s;
+                font-family: nunito_bold;
+                font-weight: 700;
+                &:hover{
+                    background-color: #fff;
+                    color: #333;
+                    border: 2px solid #211E3B;
+                }
+            }
+        }
+    }
+    .footer_bottom{
+        font-size: 15px;
+        p{
+            a{
+                color: #fff;
+                font-family: nunito_bold;
+                font-weight: 700;
+                transition: .5s;
+                &:hover{
+                    color: #6168FF;
+                }
+            }
+        }
+        ul{
+            li{
+                a{
+                    font-size: 18px;
+                    color: #6168FF;
+                    transition: .5s;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+// footer-part start

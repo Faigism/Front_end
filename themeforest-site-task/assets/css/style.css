@@ -626,20 +626,21 @@ body ul {
 .testimonials .card-test .test-img {
   position: relative;
   display: inline-block;
-  width: auto;
+  width: 100px;
   margin-bottom: 10px;
 }
 .testimonials .card-test .test-img img {
   width: 100%;
-  width: 100px;
+  height: 100%;
   border-radius: 50%;
+  margin-bottom: 19px;
   display: inline-block;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.07);
 }
 .testimonials .card-test .test-img::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   right: 0;
   background-image: url("https://getmasum.com/html-preview/nour/assets/img/quote-img.png");
   height: 40px;
@@ -741,5 +742,101 @@ body ul {
 .contact form .send-btn input:hover {
   background: #211E3B;
   border: 2px solid #211E3B;
+  color: #fff;
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: #00102A;
+  padding: 250px 0 40px;
+  color: #fff;
+  -webkit-clip-path: polygon(0 250px, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 250px, 100% 0, 100% 100%, 0% 100%);
+}
+.footer .footer-top {
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(247, 243, 243, 0.3);
+}
+.footer .footer-top .footer-widget {
+  margin-bottom: 30px;
+}
+.footer .footer-top .footer-widget img {
+  margin-bottom: 25px;
+  width: 150px;
+}
+.footer .footer-top .footer-widget .footer-contact-info p {
+  margin-bottom: 15px;
+}
+.footer .footer-top .footer-widget .footer-contact-info p i {
+  margin-right: 20px;
+  float: left;
+  font-size: 24px;
+}
+.footer .footer-top .footer-widget .footer-contact-info p span {
+  display: block;
+  overflow: hidden;
+}
+.footer .footer-top .footer-widget h3 {
+  position: relative;
+  font-size: 17px;
+  margin-bottom: 26px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer .footer-top .footer-widget ul {
+  padding-left: 0;
+}
+.footer .footer-top .footer-widget ul li {
+  line-height: 32px;
+}
+.footer .footer-top .footer-widget ul li a {
+  color: #fff;
+  transition: 0.6s;
+}
+.footer .footer-top .footer-widget ul li a:hover {
+  color: #6168FF;
+}
+.footer .footer-top .footer-widget input {
+  height: 45px;
+  line-height: 45px;
+}
+.footer .footer-top .footer-widget button {
+  background-color: #6168FF;
+  border: 2px solid #6168FF;
+  color: #fff;
+  font-size: 13px;
+  padding: 12px 30px;
+  margin-top: 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-family: nunito_bold;
+  font-weight: 700;
+}
+.footer .footer-top .footer-widget button:hover {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #211E3B;
+}
+.footer .footer_bottom {
+  font-size: 15px;
+}
+.footer .footer_bottom p a {
+  color: #fff;
+  font-family: nunito_bold;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.footer .footer_bottom p a:hover {
+  color: #6168FF;
+}
+.footer .footer_bottom ul li a {
+  font-size: 18px;
+  color: #6168FF;
+  transition: 0.5s;
+}
+.footer .footer_bottom ul li a:hover {
   color: #fff;
 }/*# sourceMappingURL=style.css.map */
