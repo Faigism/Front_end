@@ -129,6 +129,9 @@ body ul {
   .single-deal {
     width: 350px;
   }
+  .card-test {
+    height: 350px;
+  }
 }
 @media (min-width: 767px) and (max-width: 992px) {
   .nav-bottom .menu-bars {
@@ -156,6 +159,9 @@ body ul {
   }
   .single-deal {
     width: 600px;
+  }
+  .card-test {
+    height: 350px;
   }
 }
 @media (min-width: 992px) and (max-width: 1400px) {
@@ -470,13 +476,12 @@ body ul {
   color: #727272;
 }
 
-.gallery {
+.all-sec {
   padding: 130px 0;
 }
 
 .portfolio-grid {
   position: relative;
-  height: 1185px;
 }
 .portfolio-grid .row .portfolio-item {
   margin-bottom: 30px;
@@ -542,4 +547,199 @@ body ul {
   color: #ffffff;
   text-align: center;
   opacity: 0;
+}
+
+.single-package {
+  margin: 0 0px 30px;
+  border: 1px solid #ebe6de;
+}
+.single-package a {
+  color: #727272;
+}
+.single-package a .pack-image img {
+  width: 100%;
+  position: relative;
+}
+.single-package a .pack-hover {
+  padding: 30px;
+  position: relative;
+}
+.single-package a .pack-hover .pack_price {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  top: -26px;
+  right: 10px;
+  background-color: #6168FF;
+  border-radius: 30px;
+  padding: 9px 18px;
+  transition: 0.5s;
+  display: inline-block;
+}
+.single-package a .pack-hover .pack_price:hover {
+  background-color: #212a42;
+}
+.single-package a .pack-hover .tour-rating {
+  color: #fec42d;
+  margin-bottom: 9px;
+  font-size: 13px;
+}
+.single-package a .pack-hover h5 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: nunito_bold;
+  font-weight: 700;
+}
+.single-package a .pack-hover .pac-meta i {
+  color: #333;
+}
+.single-package a .pack-hover .pac-meta .psingle-meta {
+  margin-right: 5px;
+}
+
+.partner-logo {
+  background-image: url("https://getmasum.com/html-preview/nour/assets/img/bg/client-bg.png");
+  background-color: #6168FF;
+  position: relative;
+  padding: 80px 30px;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  overflow: hidden;
+}
+.partner-logo .logo-carousel .logo1 a img {
+  border-radius: 4px;
+}
+
+.testimonials {
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+}
+.testimonials .card-test {
+  background-color: #F4F9FF;
+  color: #333;
+  border-radius: 4px;
+  padding: 40px 28px;
+  text-align: center;
+}
+.testimonials .card-test .test-img {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  margin-bottom: 10px;
+}
+.testimonials .card-test .test-img img {
+  width: 100%;
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.07);
+}
+.testimonials .card-test .test-img::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url("https://getmasum.com/html-preview/nour/assets/img/quote-img.png");
+  height: 40px;
+  width: 40px;
+  background-color: #6168FF;
+  background-repeat: no-repeat;
+  background-position: 11px;
+  border-radius: 50%;
+}
+.testimonials .card-test .test-content {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: nunito_regular;
+  font-weight: 400;
+}
+.testimonials .card-test .test-bottom h3 {
+  font-size: 19px;
+  font-family: nunito_bold;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 2px 0 6px 0;
+}
+.testimonials .card-test .test-bottom .test-rating {
+  color: #ffc000;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.blog {
+  overflow: hidden;
+  padding: 50px 0 130px 0;
+}
+.blog .single-blog {
+  margin-bottom: 30px;
+  border: 1px solid #ebe6de;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  position: relative;
+}
+.blog .single-blog .blog_image {
+  position: relative;
+}
+.blog .single-blog .blog_image img {
+  width: 100%;
+  display: block;
+}
+.blog .single-blog .blog_text {
+  padding: 30px 30px;
+}
+.blog .single-blog .blog_text span {
+  color: #333;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+.blog .single-blog .blog_text span i {
+  padding-right: 3px;
+}
+.blog .single-blog .blog_text h4 {
+  line-height: 32px;
+}
+.blog .single-blog .blog_text h4 a {
+  color: #333;
+  font-size: 24px;
+  transition: 0.5s;
+}
+.blog .single-blog .blog_text h4 a:hover {
+  color: #6168FF;
+}
+
+.contact form {
+  background-color: #F4F9FF;
+  padding: 55px 40px;
+  border-radius: 4px;
+}
+.contact form .form-control {
+  padding: 13px 23px;
+  border-radius: 4px;
+  background-color: #fff;
+  border-color: #fff;
+  margin-bottom: 30px;
+}
+.contact form textarea {
+  height: 197px;
+}
+.contact form .send-btn input {
+  background-color: #6168FF;
+  border: 2px solid #6168FF;
+  color: #fff;
+  font-size: 13px;
+  padding: 12px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-family: nunito_bold;
+  font-weight: 700;
+}
+.contact form .send-btn input:hover {
+  background: #211E3B;
+  border: 2px solid #211E3B;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
