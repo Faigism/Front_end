@@ -1,5 +1,5 @@
 @import "_reset";
-
+// header-part start
 .header-nav {
     z-index: 2;
     overflow: hidden;
@@ -7,20 +7,37 @@
     width: 100%;
     top: 0;
     right: 0;
-
     .nav-top {
         padding: 20px 2px;
         background-color: #262626;
         position: relative;
-
         .hdr-img {
             margin-left: 1.3rem;
             width: 152px;
         }
+        .hdr-btn {
+            margin-right: 1.3rem;
+            position: absolute;
+            right: 0;
+            a {
+                border: none;
+                background-color: #7aa93c;
+                padding: 9px 21px;
+                border-radius: 5px;
+                color: white;
+                font-size: 14px;
+                box-shadow: 0 2px 0 #6f9a37;
+                font-family: nunito_md;
+                &:hover {
+                    background-color: #6f9a37;
+                }
+            }
+        }
     }
 }
+// header-part end
 
-
+// fix-icon start
 .fix-icons {
     .spin-cog {
         position: absolute;
@@ -63,61 +80,34 @@
         }
     }
 }
-
+// fix-icon end
+// font-family start
 @font-face {
     font-family: nunito_regular;
     src: url("../fonts/Nunito-Regular.ttf");
 }
-
 @font-face {
     font-family: nunito_md;
     src: url("../fonts/Nunito-Medium.ttf");
 }
-
 @font-face {
     font-family: nunito_bold;
     src: url("../fonts/Nunito-Bold.ttf");
 }
-
 @font-face {
     font-family: nunito_semibold;
     src: url("../fonts/Nunito-SemiBold.ttf");
 }
-
 @font-face {
     font-family: nunito_extrabold;
     src: url("../fonts/Nunito-ExtraBold.ttf");
 }
-
 @font-face {
     font-family: 'Material Icons';
     src: url("https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2") format('woff2');
 }
-
-
-
-.hdr-btn {
-    margin-right: 1.3rem;
-    position: absolute;
-    right: 0;
-
-    a {
-        border: none;
-        background-color: #7aa93c;
-        padding: 9px 21px;
-        border-radius: 5px;
-        color: white;
-        font-size: 14px;
-        box-shadow: 0 2px 0 #6f9a37;
-        font-family: nunito_md;
-
-        &:hover {
-            background-color: #6f9a37;
-        }
-
-    }
-}
-
+// font-family end
+// media-query (max:767px)start
 @media (max-width:767px) {
     .hdr-nav {
         opacity: 0;
@@ -158,7 +148,8 @@
     }
 
 }
-
+// media-query (max:767px)end
+// media-query (min:767px-992px)start
 @media (min-width:767px) and (max-width:992px) {
     .nav-bottom {
         .menu-bars {
@@ -206,7 +197,8 @@
         height: 350px;
     }
 }
-
+// media-query (min:767px-992px)end
+// media-query (min:992px-1400px)start
 @media (min-width:992px) and (max-width:1400px) {
     .nav-bottom {
         .menu-bars {
@@ -246,7 +238,8 @@
     }
 
 }
-
+// media-query (min:992px-1400px)end
+// media-query (min:1400px)start
 @media (min-width:1400px) {
     .nav-bottom {
         .menu-bars {
@@ -291,129 +284,118 @@
         width: 410px;
     }
 }
-
-
+// media-query (min:1400px)end
+// nav-bottom start
 .nav-bottom-bg {
     background-color: #fff;
     padding: 1rem;
     position: fixed;
     width: 100%;
-
     .nav-bottom {
         margin-top: 0.5rem;
-    }
-}
-
-.hdr-nav {
-    display: flex;
-    align-items: center;
-
-    .nav-list {
-        padding-top: 1rem;
-        display: flex;
-        gap: 20px;
-        position: absolute;
-        z-index: 999;
-
-        li {
-            a {
-                padding: 24px 0 40px;
-                transition: .6s;
-
-                &:hover {
-                    color: #6168FF;
-                }
-
-                color: #333;
-                font-family: nunito_bold;
-            }
-        }
-
-        .drop-nav {
-            position: relative;
-
-            &:hover {
-                .dropdown-content {
-                    display: block;
-                    background-color: white;
-                    color: #262626;
-
+        .hdr-nav {
+            display: flex;
+            align-items: center;
+            .nav-list {
+                padding-top: 1rem;
+                display: flex;
+                gap: 20px;
+                position: absolute;
+                z-index: 999;
+                li {
                     a {
-                        color: #333;
-
+                        padding: 24px 0 40px;
+                        transition: .6s;
                         &:hover {
-                            background-color: #6168FF;
-                            color: white;
+                            color: #6168FF;
+                        }
+                        color: #333;
+                        font-family: nunito_bold;
+                    }
+                }
+                .drop-nav {
+                    position: relative;
+                    &:hover {
+                        .dropdown-content {
+                            display: block;
+                            background-color: white;
+                            color: #262626;
+                            a {
+                                color: #333;
+        
+                                &:hover {
+                                    background-color: #6168FF;
+                                    color: white;
+                                }
+                            }
                         }
                     }
                 }
+                .dropdown-content {
+                    margin-top: 1.5rem;
+                    width: 200px;
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: -25px;
+                    border-top: 2px solid #6168FF;
+                    border-radius: 4px;
+                    padding: 15px;
+                    font-size: 14px;
+                }
             }
-        }
-
-        .dropdown-content {
-            margin-top: 1.5rem;
-            width: 200px;
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: -25px;
-            border-top: 2px solid #6168FF;
-            border-radius: 4px;
-            padding: 15px;
-            font-size: 14px;
         }
     }
 }
-
-
-
+// nav-bottom end
+// mn-bg sec start
 .mn-bg {
     background-image: url("https://getmasum.com/html-preview/nour/assets/img/slider/1.jpg");
     background-size: cover;
     background-position: center;
     min-height: 650px;
     margin-top: 10rem;
-}
-
-.bg-opacity {
-    background: rgba(0, 0, 0, 0.5);
-    min-height: 650px;
-}
-
-.travel-content {
-    font-family: nunito_md;
-    margin-top: 13rem;
-    color: white;
-
-    div {
-        p {
-            line-height: 30px;
-        }
-
-        h1 {
-            font-family: nunito_bold;
-            line-height: 1.4;
-        }
-
-        a {
-            text-transform: uppercase;
-            background-color: #6168FF;
-            border: 2px solid #6168FF;
-            border-radius: 4px;
-            color: #fff;
-            font-size: 13px;
-            padding: 13px 30px;
-            transition: .3s;
-            font-weight: 700;
-
-            &:hover {
-                border: 2px solid white;
-                color: #fff;
+    .bg-opacity {
+        background: rgba(0, 0, 0, 0.5);
+        min-height: 650px;
+        .travel-content {
+            font-family: nunito_md;
+            margin-top: 13rem;
+            color: white;
+        
+            div {
+                p {
+                    line-height: 30px;
+                }
+        
+                h1 {
+                    font-family: nunito_bold;
+                    line-height: 1.4;
+                }
+        
+                a {
+                    text-transform: uppercase;
+                    background-color: #6168FF;
+                    border: 2px solid #6168FF;
+                    border-radius: 4px;
+                    color: #fff;
+                    font-size: 13px;
+                    padding: 13px 30px;
+                    transition: .3s;
+                    font-weight: 700;
+        
+                    &:hover {
+                        border: 2px solid white;
+                        color: #fff;
+                        background-color: transparent;
+                    }
+                }
             }
         }
     }
 }
-
+// mn-bg sec end
+// travel-about sec start
 .travel-about {
     padding: 130px 0;
 
@@ -475,9 +457,8 @@
         }
     }
 }
-
-
-
+// travel-about sec end
+// top-deals sec start
 .deals-title {
     text-align: center;
     margin-bottom: 60px;
@@ -514,190 +495,195 @@
         font-family: nunito_regular;
     }
 }
-
-.owl-stage-outer {
-    overflow: hidden;
-
-    .owl-stage {
-        width: 3864px;
-
-        .owl-item {
-            display: flex;
-            margin-bottom: 5rem;
-
-            .single-deal {
-                margin-right: 30px;
-                border: 1px solid #ebe6de;
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
-                border-radius: 4px;
+.top-deals{
+    .top-package{
+        .owl-stage-outer {
+            overflow: hidden;
+        
+            .owl-stage {
+                width: 3864px;
+        
+                .owl-item {
+                    display: flex;
+                    margin-bottom: 5rem;
+        
+                    .single-deal {
+                        margin-right: 30px;
+                        border: 1px solid #ebe6de;
+                        box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+                        border-radius: 4px;
+                        overflow: hidden;
+                        text-align: left;
+                        position: relative;
+                        z-index: -1;
+        
+                        a {
+                            color: #727272;
+        
+                            img {
+                                width: 100%;
+                            }
+        
+                            .deal-caption {
+                                div {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+        
+                                padding: 25px 30px;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                background-color: #fff;
+                                width: 100%;
+        
+                                h4 {
+                                    color: #333;
+                                    font-family: nunito_bold;
+                                    font-weight: 700;
+                                }
+        
+                                span {
+                                    font-size: 16px;
+                                    font-family: nunito_semibold;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+        
+                    }
+                }
+            }
+        }
+    }
+}
+// top-deals sec end
+// services sec start
+.services{
+    .services-text{
+        .service {
+            margin-bottom: 30px;
+            background-color: #F4F9FF;
+            border-radius: 5px;
+            padding: 35px 35px 20px;
+        
+            .ser-icon {
+                color: #6168FF;
+                float: left;
+                margin-right: 20px;
+        
+                i {
+                    font-size: 50px;
+                }
+            }
+        
+            .ser-text {
                 overflow: hidden;
-                text-align: left;
-                position: relative;
-                z-index: -1;
-
-                a {
+        
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    font-family: nunito_bold;
+                    font-weight: 700;
+                }
+        
+                p {
+                    margin-bottom: 15px;
                     color: #727272;
-
+                }
+            }
+        }
+    }
+}
+// services sec end
+// gallery sec start
+.all-sec {
+    padding: 130px 0;
+    .portfolio-grid {
+        position: relative;
+    
+        .row {
+            .portfolio-item {
+                margin-bottom: 30px;
+    
+                .single-gallery {
+                    position: relative;
+                    overflow: hidden;
+    
+                    &:hover {
+                        background-color: #6168FF;
+    
+                        .gallery-icon {
+                            opacity: 1;
+                            right: 20px;
+                            bottom: 20px;
+    
+                            &:hover {
+                                background-color: #212a42;
+                                color: #fff;
+                            }
+                        }
+    
+                        h4 {
+                            opacity: 1;
+                            top: 50%;
+                            left: 30%;
+                        }
+                    }
+    
+                    &:hover::before {
+                        opacity: 0.8;
+                    }
+    
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        transition: .5s;
+                        background-color: #6168FF;
+                        opacity: 0;
+                    }
+    
                     img {
                         width: 100%;
                     }
-
-                    .deal-caption {
-                        div {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                        }
-
-                        padding: 25px 30px;
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        background-color: #fff;
-                        width: 100%;
-
-                        h4 {
-                            color: #333;
-                            font-family: nunito_bold;
-                            font-weight: 700;
-                        }
-
-                        span {
-                            font-size: 16px;
-                            font-family: nunito_semibold;
-                            font-weight: 600;
-                        }
-                    }
-                }
-
-            }
-        }
-    }
-}
-
-
-.service {
-    margin-bottom: 30px;
-    background-color: #F4F9FF;
-    border-radius: 5px;
-    padding: 35px 35px 20px;
-
-    .ser-icon {
-        color: #6168FF;
-        float: left;
-        margin-right: 20px;
-
-        i {
-            font-size: 50px;
-        }
-    }
-
-    .ser-text {
-        overflow: hidden;
-
-        h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            font-family: nunito_bold;
-            font-weight: 700;
-        }
-
-        p {
-            margin-bottom: 15px;
-            color: #727272;
-        }
-    }
-}
-
-
-.all-sec {
-    padding: 130px 0;
-}
-
-.portfolio-grid {
-    position: relative;
-
-    .row {
-        .portfolio-item {
-            margin-bottom: 30px;
-
-            .single-gallery {
-                position: relative;
-                overflow: hidden;
-
-                &:hover {
-                    background-color: #6168FF;
-
+    
                     .gallery-icon {
-                        opacity: 1;
-                        right: 20px;
+                        background-color: #fff;
+                        color: #333;
+                        width: 45px;
+                        height: 45px;
+                        line-height: 46px;
+                        position: absolute;
+                        right: 0;
                         bottom: 20px;
-
-                        &:hover {
-                            background-color: #212a42;
-                            color: #fff;
-                        }
+                        text-align: center;
+                        padding-top: 3px;
+                        border-radius: 50px;
+                        font-size: 19px;
+                        transition: .5s;
+                        opacity: 0;
                     }
-
+    
                     h4 {
-                        opacity: 1;
-                        top: 50%;
+                        position: absolute;
+                        top: 80%;
                         left: 30%;
+                        transition: .5s;
+                        font-size: 20px;
+                        color: #ffffff;
+                        text-align: center;
+                        opacity: 0;
                     }
-                }
-
-                &:hover::before {
-                    opacity: 0.8;
-                }
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    transition: .5s;
-                    background-color: #6168FF;
-                    opacity: 0;
-                }
-
-                img {
-                    width: 100%;
-                }
-
-                .gallery-icon {
-                    background-color: #fff;
-                    color: #333;
-                    width: 45px;
-                    height: 45px;
-                    line-height: 46px;
-                    position: absolute;
-                    right: 0;
-                    bottom: 20px;
-                    text-align: center;
-                    padding-top: 3px;
-                    border-radius: 50px;
-                    font-size: 19px;
-                    transition: .5s;
-                    opacity: 0;
-                }
-
-                h4 {
-                    position: absolute;
-                    top: 80%;
-                    left: 30%;
-                    transition: .5s;
-                    font-size: 20px;
-                    color: #ffffff;
-                    text-align: center;
-                    opacity: 0;
                 }
             }
         }
     }
 }
-
-
-
+// gallery sec end
+// special-package sec start
 .single-package {
     margin: 0 0px 30px;
     border: 1px solid #ebe6de;
@@ -759,9 +745,8 @@
         }
     }
 }
-
-
-
+// special-package sec end
+// partner-logo start
 .partner-logo {
     background-image: url("https://getmasum.com/html-preview/nour/assets/img/bg/client-bg.png");
     background-color: #6168FF;
@@ -781,7 +766,7 @@
         }
     }
 }
-
+// partner-logo end
 // testimonial-section start
 .testimonials {
     overflow: hidden;

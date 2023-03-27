@@ -28,6 +28,24 @@ body ul {
   margin-left: 1.3rem;
   width: 152px;
 }
+.header-nav .nav-top .hdr-btn {
+  margin-right: 1.3rem;
+  position: absolute;
+  right: 0;
+}
+.header-nav .nav-top .hdr-btn a {
+  border: none;
+  background-color: #7aa93c;
+  padding: 9px 21px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  box-shadow: 0 2px 0 #6f9a37;
+  font-family: nunito_md;
+}
+.header-nav .nav-top .hdr-btn a:hover {
+  background-color: #6f9a37;
+}
 
 .fix-icons .spin-cog {
   position: absolute;
@@ -88,25 +106,6 @@ body ul {
   font-family: "Material Icons";
   src: url("https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2") format("woff2");
 }
-.hdr-btn {
-  margin-right: 1.3rem;
-  position: absolute;
-  right: 0;
-}
-.hdr-btn a {
-  border: none;
-  background-color: #7aa93c;
-  padding: 9px 21px;
-  border-radius: 5px;
-  color: white;
-  font-size: 14px;
-  box-shadow: 0 2px 0 #6f9a37;
-  font-family: nunito_md;
-}
-.hdr-btn a:hover {
-  background-color: #6f9a37;
-}
-
 @media (max-width: 767px) {
   .hdr-nav {
     opacity: 0;
@@ -224,43 +223,42 @@ body ul {
 .nav-bottom-bg .nav-bottom {
   margin-top: 0.5rem;
 }
-
-.hdr-nav {
+.nav-bottom-bg .nav-bottom .hdr-nav {
   display: flex;
   align-items: center;
 }
-.hdr-nav .nav-list {
+.nav-bottom-bg .nav-bottom .hdr-nav .nav-list {
   padding-top: 1rem;
   display: flex;
   gap: 20px;
   position: absolute;
   z-index: 999;
 }
-.hdr-nav .nav-list li a {
+.nav-bottom-bg .nav-bottom .hdr-nav .nav-list li a {
   padding: 24px 0 40px;
   transition: 0.6s;
   color: #333;
   font-family: nunito_bold;
 }
-.hdr-nav .nav-list li a:hover {
+.nav-bottom-bg .nav-bottom .hdr-nav .nav-list li a:hover {
   color: #6168FF;
 }
-.hdr-nav .nav-list .drop-nav {
+.nav-bottom-bg .nav-bottom .hdr-nav .nav-list .drop-nav {
   position: relative;
 }
-.hdr-nav .nav-list .drop-nav:hover .dropdown-content {
+.nav-bottom-bg .nav-bottom .hdr-nav .nav-list .drop-nav:hover .dropdown-content {
   display: block;
   background-color: white;
   color: #262626;
 }
-.hdr-nav .nav-list .drop-nav:hover .dropdown-content a {
+.nav-bottom-bg .nav-bottom .hdr-nav .nav-list .drop-nav:hover .dropdown-content a {
   color: #333;
 }
-.hdr-nav .nav-list .drop-nav:hover .dropdown-content a:hover {
+.nav-bottom-bg .nav-bottom .hdr-nav .nav-list .drop-nav:hover .dropdown-content a:hover {
   background-color: #6168FF;
   color: white;
 }
-.hdr-nav .nav-list .dropdown-content {
+.nav-bottom-bg .nav-bottom .hdr-nav .nav-list .dropdown-content {
   margin-top: 1.5rem;
   width: 200px;
   display: none;
@@ -280,25 +278,23 @@ body ul {
   min-height: 650px;
   margin-top: 10rem;
 }
-
-.bg-opacity {
+.mn-bg .bg-opacity {
   background: rgba(0, 0, 0, 0.5);
   min-height: 650px;
 }
-
-.travel-content {
+.mn-bg .bg-opacity .travel-content {
   font-family: nunito_md;
   margin-top: 13rem;
   color: white;
 }
-.travel-content div p {
+.mn-bg .bg-opacity .travel-content div p {
   line-height: 30px;
 }
-.travel-content div h1 {
+.mn-bg .bg-opacity .travel-content div h1 {
   font-family: nunito_bold;
   line-height: 1.4;
 }
-.travel-content div a {
+.mn-bg .bg-opacity .travel-content div a {
   text-transform: uppercase;
   background-color: #6168FF;
   border: 2px solid #6168FF;
@@ -309,9 +305,10 @@ body ul {
   transition: 0.3s;
   font-weight: 700;
 }
-.travel-content div a:hover {
+.mn-bg .bg-opacity .travel-content div a:hover {
   border: 2px solid white;
   color: #fff;
+  background-color: transparent;
 }
 
 .travel-about {
@@ -398,17 +395,17 @@ body ul {
   font-family: nunito_regular;
 }
 
-.owl-stage-outer {
+.top-deals .top-package .owl-stage-outer {
   overflow: hidden;
 }
-.owl-stage-outer .owl-stage {
+.top-deals .top-package .owl-stage-outer .owl-stage {
   width: 3864px;
 }
-.owl-stage-outer .owl-stage .owl-item {
+.top-deals .top-package .owl-stage-outer .owl-stage .owl-item {
   display: flex;
   margin-bottom: 5rem;
 }
-.owl-stage-outer .owl-stage .owl-item .single-deal {
+.top-deals .top-package .owl-stage-outer .owl-stage .owl-item .single-deal {
   margin-right: 30px;
   border: 1px solid #ebe6de;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
@@ -418,13 +415,13 @@ body ul {
   position: relative;
   z-index: -1;
 }
-.owl-stage-outer .owl-stage .owl-item .single-deal a {
+.top-deals .top-package .owl-stage-outer .owl-stage .owl-item .single-deal a {
   color: #727272;
 }
-.owl-stage-outer .owl-stage .owl-item .single-deal a img {
+.top-deals .top-package .owl-stage-outer .owl-stage .owl-item .single-deal a img {
   width: 100%;
 }
-.owl-stage-outer .owl-stage .owl-item .single-deal a .deal-caption {
+.top-deals .top-package .owl-stage-outer .owl-stage .owl-item .single-deal a .deal-caption {
   padding: 25px 30px;
   position: absolute;
   bottom: 0;
@@ -432,46 +429,46 @@ body ul {
   background-color: #fff;
   width: 100%;
 }
-.owl-stage-outer .owl-stage .owl-item .single-deal a .deal-caption div {
+.top-deals .top-package .owl-stage-outer .owl-stage .owl-item .single-deal a .deal-caption div {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.owl-stage-outer .owl-stage .owl-item .single-deal a .deal-caption h4 {
+.top-deals .top-package .owl-stage-outer .owl-stage .owl-item .single-deal a .deal-caption h4 {
   color: #333;
   font-family: nunito_bold;
   font-weight: 700;
 }
-.owl-stage-outer .owl-stage .owl-item .single-deal a .deal-caption span {
+.top-deals .top-package .owl-stage-outer .owl-stage .owl-item .single-deal a .deal-caption span {
   font-size: 16px;
   font-family: nunito_semibold;
   font-weight: 600;
 }
 
-.service {
+.services .services-text .service {
   margin-bottom: 30px;
   background-color: #F4F9FF;
   border-radius: 5px;
   padding: 35px 35px 20px;
 }
-.service .ser-icon {
+.services .services-text .service .ser-icon {
   color: #6168FF;
   float: left;
   margin-right: 20px;
 }
-.service .ser-icon i {
+.services .services-text .service .ser-icon i {
   font-size: 50px;
 }
-.service .ser-text {
+.services .services-text .service .ser-text {
   overflow: hidden;
 }
-.service .ser-text h2 {
+.services .services-text .service .ser-text h2 {
   font-size: 20px;
   margin-bottom: 10px;
   font-family: nunito_bold;
   font-weight: 700;
 }
-.service .ser-text p {
+.services .services-text .service .ser-text p {
   margin-bottom: 15px;
   color: #727272;
 }
@@ -479,38 +476,37 @@ body ul {
 .all-sec {
   padding: 130px 0;
 }
-
-.portfolio-grid {
+.all-sec .portfolio-grid {
   position: relative;
 }
-.portfolio-grid .row .portfolio-item {
+.all-sec .portfolio-grid .row .portfolio-item {
   margin-bottom: 30px;
 }
-.portfolio-grid .row .portfolio-item .single-gallery {
+.all-sec .portfolio-grid .row .portfolio-item .single-gallery {
   position: relative;
   overflow: hidden;
 }
-.portfolio-grid .row .portfolio-item .single-gallery:hover {
+.all-sec .portfolio-grid .row .portfolio-item .single-gallery:hover {
   background-color: #6168FF;
 }
-.portfolio-grid .row .portfolio-item .single-gallery:hover .gallery-icon {
+.all-sec .portfolio-grid .row .portfolio-item .single-gallery:hover .gallery-icon {
   opacity: 1;
   right: 20px;
   bottom: 20px;
 }
-.portfolio-grid .row .portfolio-item .single-gallery:hover .gallery-icon:hover {
+.all-sec .portfolio-grid .row .portfolio-item .single-gallery:hover .gallery-icon:hover {
   background-color: #212a42;
   color: #fff;
 }
-.portfolio-grid .row .portfolio-item .single-gallery:hover h4 {
+.all-sec .portfolio-grid .row .portfolio-item .single-gallery:hover h4 {
   opacity: 1;
   top: 50%;
   left: 30%;
 }
-.portfolio-grid .row .portfolio-item .single-gallery:hover::before {
+.all-sec .portfolio-grid .row .portfolio-item .single-gallery:hover::before {
   opacity: 0.8;
 }
-.portfolio-grid .row .portfolio-item .single-gallery::before {
+.all-sec .portfolio-grid .row .portfolio-item .single-gallery::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -519,10 +515,10 @@ body ul {
   background-color: #6168FF;
   opacity: 0;
 }
-.portfolio-grid .row .portfolio-item .single-gallery img {
+.all-sec .portfolio-grid .row .portfolio-item .single-gallery img {
   width: 100%;
 }
-.portfolio-grid .row .portfolio-item .single-gallery .gallery-icon {
+.all-sec .portfolio-grid .row .portfolio-item .single-gallery .gallery-icon {
   background-color: #fff;
   color: #333;
   width: 45px;
@@ -538,7 +534,7 @@ body ul {
   transition: 0.5s;
   opacity: 0;
 }
-.portfolio-grid .row .portfolio-item .single-gallery h4 {
+.all-sec .portfolio-grid .row .portfolio-item .single-gallery h4 {
   position: absolute;
   top: 80%;
   left: 30%;
