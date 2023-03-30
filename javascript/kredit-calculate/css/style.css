@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://ziraatbank.az/lib/ziraat-tmp/assets/images/listpage_landing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    width: 300px;
+    margin-top: 2rem;
+}
+
+.top-h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.calculate-bg{
+    background-color: #e8edf0;
+    box-shadow: 9px 6px 20px 0px;
+}
+
+.calculate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h4{
+    height: 0px;
+}
+
+input{
+    width: 400px;
+    border: 2px solid #a8acad;
+    border-radius: 50px;
+}
+
+.input-form{
+    position: relative;
+    width: 400px;
+}
+
+.currency{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.all-sec{
+    margin-top: 3rem;
+}
+
+p{
+    height: 0;
+}
