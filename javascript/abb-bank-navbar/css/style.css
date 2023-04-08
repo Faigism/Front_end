@@ -6,8 +6,8 @@
 }
 
 @media (min-width: 992px) {
-  .inp {
-    height: 140px;
+  .search-sec form {
+    height: 160px;
   }
   .hdr-top-left {
     display: flex;
@@ -24,7 +24,7 @@
     background-color: white;
     cursor: pointer;
   }
-  .hdr-abb-logo .burger-menu {
+  .hdr-abb-logo .burger-icon {
     display: none;
   }
   .hdr-abb-logo a img {
@@ -38,13 +38,16 @@
   .hdr-top-right .search span {
     display: none;
   }
-  .hdr-bottom2 .hdr-abb-logo a img {
+  .hdr-btm .hdr-abb-logo a img {
     height: 35px;
   }
-  .hdr-bottom2 .hdr-btm2-nav a {
+  .hdr-btm .hdr-btm2-nav a {
     display: none;
   }
-  .hdr-bottom2 .hdr-btm2-right {
+  .hdr-btm .hdr-btm2-right {
+    display: none;
+  }
+  #hdr-bottom2 {
     display: none;
   }
 }
@@ -192,49 +195,49 @@
 #hdr-bottom {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  border-bottom: 1px solid #262626;
+  border-color: #f6f7f8;
 }
-#hdr-bottom .hdr-bottom2 {
+#hdr-bottom .hdr-btm {
   overflow: hidden;
 }
-#hdr-bottom .hdr-bottom2 .hdr-abb-logo .hdr-btm2-nav {
+#hdr-bottom .hdr-btm .hdr-abb-logo .hdr-btm2-nav {
   margin-left: 4rem;
   display: flex;
   gap: 4px;
 }
-#hdr-bottom .hdr-bottom2 .hdr-abb-logo .hdr-btm2-nav .individual {
+#hdr-bottom .hdr-btm .hdr-abb-logo .hdr-btm2-nav .individual {
   color: #262626;
   font-weight: 500;
 }
-#hdr-bottom .hdr-bottom2 .hdr-abb-logo .hdr-btm2-nav .individual::after {
+#hdr-bottom .hdr-btm .hdr-abb-logo .hdr-btm2-nav .individual::after {
   content: "/";
   color: #262626;
   font-size: 15px;
   padding: 0 20px;
 }
-#hdr-bottom .hdr-bottom2 .hdr-abb-logo .hdr-btm2-nav .corporative::after {
+#hdr-bottom .hdr-btm .hdr-abb-logo .hdr-btm2-nav .corporative::after {
   content: "/";
   color: #666;
   font-size: 15px;
   padding: 0 20px;
 }
-#hdr-bottom .hdr-bottom2 .hdr-abb-logo .hdr-btm2-nav a {
+#hdr-bottom .hdr-btm .hdr-abb-logo .hdr-btm2-nav a {
   text-decoration: none;
   color: #666;
   font-weight: 500;
   font-size: 15px;
 }
-#hdr-bottom .hdr-bottom2 .hdr-abb-logo .hdr-btm2-nav a:hover {
+#hdr-bottom .hdr-btm .hdr-abb-logo .hdr-btm2-nav a:hover {
   color: #262626;
 }
-#hdr-bottom .hdr-bottom2 .hdr-abb-logo .burger-icon {
-  display: flex;
-  align-items: center;
+#hdr-bottom .hdr-btm .hdr-abb-logo .burger-icon {
   cursor: pointer;
 }
-#hdr-bottom .hdr-bottom2 .hdr-btm2-right a {
+#hdr-bottom .hdr-btm .hdr-btm2-right a {
   text-decoration: none;
 }
-#hdr-bottom .hdr-bottom2 .hdr-btm2-right a .right-logo {
+#hdr-bottom .hdr-btm .hdr-btm2-right a .right-logo {
   background-image: url("https://abb-bank.az/img/icons/internet-banking-signin.svg");
   background-repeat: no-repeat;
   background-position: 50%;
@@ -243,7 +246,7 @@
   display: inline-block;
   margin-right: 10px;
 }
-#hdr-bottom .hdr-bottom2 .hdr-btm2-right a .right-int {
+#hdr-bottom .hdr-btm .hdr-btm2-right a .right-int {
   color: #0056c1;
   font-weight: 600;
 }
@@ -252,6 +255,7 @@
   position: absolute;
   background-color: white;
   top: 50px;
+  margin-top: 1.3rem;
 }
 #hdr-search .search-sec form label {
   width: 100%;
@@ -355,4 +359,101 @@
   color: #262626;
   padding-bottom: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+#hdr-bottom2 .hdr-btm2-nav {
+  border-bottom: 1px solid rgb(230, 230, 230);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#hdr-bottom2 .hdr-btm2-nav nav {
+  position: relative;
+}
+#hdr-bottom2 .hdr-btm2-nav nav ul {
+  display: flex;
+}
+#hdr-bottom2 .hdr-btm2-nav nav ul li {
+  padding-right: 1.5rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.3;
+}
+#hdr-bottom2 .hdr-btm2-nav nav ul li span {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#hdr-bottom2 .hdr-btm2-nav nav ul li a {
+  color: #17253a;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+}
+#hdr-bottom2 .hdr-btm2-nav nav ul .hdr-btm-nav {
+  opacity: 1;
+  background-color: #fff;
+  box-shadow: 0 20px 30px -30px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  width: 100%;
+  padding: 40px 0 40px 50px;
+  z-index: 10;
+}
+#hdr-bottom2 .hdr-btm2-nav nav ul .hdr-btm-nav span a {
+  font-size: 17px;
+  color: #262626;
+  text-decoration: none;
+}
+#hdr-bottom2 .hdr-btm2-nav nav ul .hdr-btm-nav i {
+  background-image: url("https://abb-bank.az/img/icons/close.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+#hdr-bottom2 .hdr-btm2-nav nav ul .hdr-btm-nav .hdr-btm-img {
+  border-color: #ebebeb;
+  border-left: 1px solid #ebebeb;
+}
+#hdr-bottom2 .hdr-btm2-nav nav ul .hdr-btm-nav .hdr-btm-img i {
+  background-image: url("https://abb-bank.az/img/icons/close.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+#hdr-bottom2 .hdr-btm2-nav nav ul .hdr-btm-nav .hdr-btm-img .hdr-btm-img-nav h4 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+#hdr-bottom2 .hdr-btm2-nav nav ul .hdr-btm-nav .hdr-btm-img .hdr-btm-img-nav span {
+  font-size: 16px;
+  margin-bottom: 1rem;
+  display: flex;
+}
+#hdr-bottom2 .hdr-btm2-nav nav ul .hdr-btm-nav .hdr-btm-img .hdr-btm-img-nav a {
+  color: #262626;
+  border: 1px solid #262626;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  padding: 10px 30px;
+  transition: 0.4s;
+}
+#hdr-bottom2 .hdr-btm2-nav nav ul .hdr-btm-nav .hdr-btm-img .hdr-btm-img-nav a:hover {
+  background-color: #262626;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
