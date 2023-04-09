@@ -1,8 +1,8 @@
 @import "_reset.scss";
 
 @media (min-width: 992px) {
-    .search-sec{
-        form{
+    .search-sec {
+        form {
             height: 160px;
         }
     }
@@ -35,6 +35,43 @@
             }
         }
     }
+
+    .sldr-all {
+        .sldr-wrapper {
+            height: 524px;
+
+            .sldr-slide {
+                .slide {
+                    height: 500px;
+
+                    h3 {
+                        margin-bottom: 1.5rem;
+                        font-size: 50px;
+                    }
+
+                    a {
+                        padding: 15px 35px;
+                        margin-top: 1.5rem;
+                    }
+
+                    .slide-img {
+                        .slide-img1 {
+                            .slide-img2 {
+                                img {
+                                    height: 500px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .slide-btn {
+            margin-bottom: 3rem;
+        }
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -70,8 +107,24 @@
             display: none;
         }
     }
-    #hdr-bottom2{
+
+    #hdr-bottom2 {
         display: none;
+    }
+
+    .slide {
+        h3 {
+            font-size: 35px;
+        }
+
+        h5 {
+            font-size: 17px;
+            margin: 10px 0;
+        }
+
+        a {
+            padding: 15px 25px;
+        }
     }
 }
 
@@ -79,6 +132,17 @@
     .inp {
         font-size: 40px;
         height: 75px;
+    }
+
+    .slide {
+        h3 {
+            line-height: 54px;
+            font-size: 40px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
     }
 }
 
@@ -105,155 +169,162 @@
 #hdr-top {
     background-color: #f6f7f8;
     overflow: hidden;
-    .hdr-top-left {
-        .hdr-top-btn {
-            a {
-                color: #0056c1;
-                text-decoration: none;
-                border: 1px solid #0056c1;
-                border-radius: 50px;
-                padding: 6px 13px;
-                font-size: 14px;
-                transition: .3s;
-                font-weight: 600;
 
-                &:hover {
-                    background-color: #0056c1;
-                    color: white;
-                }
-            }
-        }
+    .hdr-all {
+        height: 60px;
 
-        .hdr-top-a {
-            a {
-                color: #666;
-                text-decoration: none;
-                font-size: 14px;
-                margin: 0 8px;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-
-            }
-
-        }
-    }
-
-    .mobil-hdr {
-        color: #666;
-
-        h4 {
-            font-size: 18px;
-        }
-
-        .arrow-hdr {
-            background-image: url("https://abb-bank.az/img/icons/select-arrow-down.svg");
-            width: 17px;
-            height: 11px;
-            background-repeat: no-repeat;
-            rotate: 180deg;
-            padding-left: 20px;
-        }
-    }
-
-    .hdr-top-right {
-        span {
-            font-size: 14px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #666;
-
-            span {
-                font-size: 16px;
-                font-weight: 600;
-            }
-
-            .icon-phone {
-                background-image: url("https://abb-bank.az/img/icons/phone.svg");
-                background-repeat: no-repeat;
-                width: 20px;
-            }
-        }
-
-        .lang {
-            position: relative;
-
-            .lang-view {
-                cursor: pointer;
-
-                span {
+        .hdr-top-left {
+            .hdr-top-btn {
+                a {
+                    color: #0056c1;
+                    text-decoration: none;
+                    border: 1px solid #0056c1;
+                    border-radius: 50px;
+                    padding: 6px 13px;
                     font-size: 14px;
-                    color: #666;
-                }
-
-                .lang-arrow {
-                    background-image: url("https://abb-bank.az/img/icons/select-arrow-down.svg");
-                    display: inline-block;
-                    width: 17px;
-                    height: 11px;
-                    background-repeat: no-repeat;
-                    transition: .5s;
-                    rotate: 180deg;
-                }
-
-                .lang-arrow.rotate {
-                    transform: rotate(180deg);
-                }
-            }
-
-            .lang-all {
-
-
-                div {
-                    display: flex;
-                    gap: 5px;
-                    padding: 20px 100px 20px 20px;
+                    transition: .3s;
+                    font-weight: 600;
 
                     &:hover {
-                        background-color: #f5f5f5;
-                    }
-
-                    img {
-                        width: 24px;
-                        height: 24px;
-                    }
-
-                    a {
-                        font-size: 16px;
-                        color: #666;
+                        background-color: #0056c1;
+                        color: white;
                     }
                 }
+            }
 
-                i {
-                    clip-path: polygon(50% 0%, 11% 68%, 90% 68%);
-                    width: 20px;
-                    height: 20px;
-                    background-color: white;
-                    position: absolute;
-                    top: -14px;
-                    right: 18px;
+            .hdr-top-a {
+                a {
+                    color: #666;
+                    text-decoration: none;
+                    font-size: 14px;
+                    margin: 0 8px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
 
-        .search {
-            margin-right: 2rem;
-            cursor: pointer;
+        .mobil-hdr {
+            color: #262626;
 
-            .search-icon {
-                background-image: url("https://abb-bank.az/img/icons/search.svg");
+            h4 {
+                font-size: 18px;
+            }
+
+            .arrow-hdr {
+                background-image: url("https://abb-bank.az/img/icons/select-arrow-down.svg");
+                background-size: contain;
+                height: 11px;
                 background-repeat: no-repeat;
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                padding-right: 1.5rem;
-
+                rotate: 180deg;
+                padding-left: 20px;
             }
         }
 
+        .hdr-top-right {
+            span {
+                font-size: 14px;
+                opacity: 0.7;
+            }
+
+            a {
+                text-decoration: none;
+                color: #262626;
+
+                span {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                .icon-phone {
+                    background-image: url("https://abb-bank.az/img/icons/phone.svg");
+                    background-repeat: no-repeat;
+                    width: 20px;
+                }
+            }
+
+            .lang {
+                position: relative;
+
+                .lang-view {
+                    cursor: pointer;
+
+                    span {
+                        font-size: 14px;
+                        color: #666;
+                        opacity: 0.7;
+                    }
+
+                    .lang-arrow {
+                        background-image: url("https://abb-bank.az/img/icons/select-arrow-down.svg");
+                        display: inline-block;
+                        background-size: contain;
+                        width: 13px;
+                        height: 11px;
+                        background-repeat: no-repeat;
+                        transition: .5s;
+                        rotate: 180deg;
+                    }
+
+                    .lang-arrow.rotate {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .lang-all {
+                    left: auto;
+                    right: 80px;
+                    width: 160px;
+                    top: 70px;
+
+                    div {
+                        display: flex;
+                        gap: 5px;
+                        padding: 20px 100px 20px 20px;
+
+                        &:hover {
+                            background-color: #f5f5f5;
+                        }
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+
+                        a {
+                            font-size: 16px;
+                            color: #666;
+                        }
+                    }
+
+                    i {
+                        clip-path: polygon(50% 0%, 11% 68%, 90% 68%);
+                        width: 20px;
+                        height: 20px;
+                        background-color: white;
+                        position: absolute;
+                        top: -14px;
+                        right: 18px;
+                    }
+                }
+            }
+
+            .search {
+                margin-right: 1.5rem;
+                cursor: pointer;
+
+                .search-icon {
+                    background-image: url("https://abb-bank.az/img/icons/search.svg");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    display: inline-block;
+                    height: 14px;
+                    padding-right: 1.3rem;
+                }
+            }
+        }
     }
 }
 
@@ -263,8 +334,10 @@
     margin-bottom: 1rem;
     border-bottom: 1px solid #262626;
     border-color: #f6f7f8;
+
     .hdr-btm {
         overflow: hidden;
+
         .hdr-abb-logo {
             .hdr-btm2-nav {
                 margin-left: 4rem;
@@ -341,6 +414,7 @@
         background-color: white;
         top: 50px;
         margin-top: 1.3rem;
+
         form {
             label {
                 width: 100%;
@@ -367,6 +441,11 @@
 
 
 .all-burger {
+    background-color: white;
+    z-index: 99999;
+    overflow-y: scroll;
+    height: calc(100% - 126px);
+
     .burger-int {
         background-color: #0056c1;
         padding: 0.5rem;
@@ -483,6 +562,7 @@
         border-bottom: 1px solid rgb(230, 230, 230);
         padding-top: 1rem;
         padding-bottom: 1rem;
+
         nav {
             position: relative;
 
@@ -499,6 +579,7 @@
                         display: flex;
                         align-items: center;
                         position: relative;
+                        transition: .5;
                     }
 
                     a {
@@ -518,8 +599,7 @@
                     left: 0;
                     width: 100%;
                     padding: 40px 0 40px 50px;
-                    z-index: 10;
-
+                    z-index: 1000;
                     span {
                         a {
                             font-size: 17px;
@@ -590,6 +670,102 @@
                     }
                 }
 
+            }
+        }
+    }
+}
+
+
+#slider-sec {
+    background: linear-gradient(90deg, #E1EBFF 9.88%, #AFB9CD 92.09%);
+
+    .sldr-all {
+        cursor: grab;
+        overflow: visible;
+        height: auto;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1;
+
+        .sldr-wrapper {
+            align-items: flex-start;
+            transition-property: transform, height;
+            box-sizing: content-box;
+            display: flex;
+            position: relative;
+            width: 100%;
+            z-index: 1;
+
+            .sldr-slide {
+                width: 100%;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity .4s ease-in-out, visibility .4s ease-in-out;
+                height: auto;
+                flex-shrink: 0;
+                position: relative;
+
+                .slide {
+                    h3 {
+                        font-weight: 600;
+                        margin-bottom: 1rem;
+                        padding-top: 3rem;
+                    }
+
+                    h5 {
+                        font-weight: 500;
+                    }
+
+                    a {
+                        font-weight: 500;
+                        border: 1px solid #262626;
+                        border-radius: 5px;
+                        transition: all .4s ease;
+
+                        &:hover {
+                            background-color: #262626;
+                            color: #fff;
+                        }
+                    }
+
+                    .slide-img {
+                        padding-top: 1.5rem;
+
+                        .slide-img1 {
+                            height: 100%;
+
+                            .slide-img2 {
+                                position: relative;
+                                overflow: hidden;
+
+                                img {
+                                    display: block;
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .slider-btn {
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+            width: 100%;
+
+            .sldr-btn {
+                background-color: #fff;
+                cursor: pointer;
+                height: 8px;
+                border-radius: 10px;
+                margin-right: 20px;
+                position: relative;
+                width: 35px;
+                z-index: 99;
             }
         }
     }

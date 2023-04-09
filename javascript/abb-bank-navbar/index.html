@@ -16,12 +16,13 @@
 </head>
 
 <body>
+    <!-- header start -->
     <header>
         <!-- header-top section start -->
         <section id="hdr-top">
             <div class="container-fluid">
-                <div class="d-flex align-items-center justify-content-between py-3 px-4">
-                    <div class="col-lg-9 col-3 d-flex align-items-center">
+                <div class="hdr-all row align-items-center">
+                    <div class="col-lg-9 col-xl-10 d-none d-lg-flex align-items-center">
                         <div class="hdr-top-left">
                             <div class="hdr-top-a me-4 d-lg-flex">
                                 <a href="https://abb-bank.az/az/haqqimizda/tender-elanlari">Tender elanları</a>
@@ -38,19 +39,18 @@
                                     Portalı</a>
                             </div>
                         </div>
-                        <div class="mobil-hdr col-6  d-lg-none d-flex align-items-center">
-                            <h4>Fərdi</h4>
-                            <span class="arrow-hdr"></span>
-                        </div>
-
                     </div>
-                    <div class="hdr-top-right d-flex align-item col-lg-3">
+                    <div class="mobil-hdr col-4 d-lg-none d-flex align-items-center">
+                        <h4>Fərdi</h4>
+                        <span class="arrow-hdr"></span>
+                    </div>
+                    <div class="hdr-top-right d-flex col-lg-3 col-xl-2 col-8 justify-content-end">
                         <div class="search d-flex align-items-center">
                             <span class="search-icon"></span>
                             <span>Axtarış</span>
                         </div>
 
-                        <div class="lang ">
+                        <div class="lang">
                             <div class="lang-view">
                                 <span class="langcode">AZ</span>
                                 <span id="arrow-icon" class="lang-arrow"></span>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
 
-                        <a href="tel:937" class="d-flex ms-5">
+                        <a href="tel:937" class="d-flex ms-4">
                             <span class="icon-phone mt-2"></span>
                             <span>937</span>
                         </a>
@@ -120,10 +120,10 @@
                     <nav>
                         <ul>
                             <li>
-                                <span>
+                                <span class="hvr-span1">
                                     <a href="https://abb-bank.az/az/ferdi/kreditler">Kreditlər</a>
                                 </span>
-                                <div class="hdr-btm-nav d-flex d-none">
+                                <div id="list1" class="hdr-btm-nav d-flex d-none">
                                     <div class="col-lg-5 col-xl-4">
                                         <div class="d-flex flex-wrap">
                                             <i></i>
@@ -163,10 +163,10 @@
                                 </div>
                             </li>
                             <li>
-                                <span>
+                                <span class="hvr-span2">
                                     <a href="https://abb-bank.az/az/ferdi/kreditler/ipoteka-kreditleri">İpoteka</a>
                                 </span>
-                                <div class="hdr-btm-nav d-flex d-none">
+                                <div id="list2" class="hdr-btm-nav d-flex d-none">
                                     <i></i>
                                     <div class="col-lg-5 col-xl-4">
                                         <div class="d-flex flex-wrap">
@@ -229,10 +229,10 @@
                                 </div>
                             </li>
                             <li>
-                                <span>
+                                <span class="hvr-span3">
                                     <a href="https://abb-bank.az/az/ferdi/emanetler">Əmanətlər</a>
                                 </span>
-                                <div class="hdr-btm-nav d-flex d-none">
+                                <div id="list3" class="hdr-btm-nav d-flex d-none">
                                     <i></i>
                                     <div class="col-lg-5 col-xl-4">
                                         <div class="d-flex flex-wrap">
@@ -257,10 +257,10 @@
                                 </div>
                             </li>
                             <li>
-                                <span>
+                                <span class="hvr-span4">
                                     <a href="https://abb-bank.az/az/ferdi/kartlar">Kartlar</a>
                                 </span>
-                                <div class="hdr-btm-nav d-flex d-none">
+                                <div id="list4" class="hdr-btm-nav d-flex d-none">
                                     <div class="col-lg-5 col-xl-4">
                                         <div class="d-flex flex-wrap">
                                             <i></i>
@@ -276,10 +276,10 @@
                                 </div>
                             </li>
                             <li>
-                                <span>
+                                <span class="hvr-span5">
                                     <a href="https://abb-bank.az/az/ferdi/pul-kocurmeleri">Pul köçürmələri</a>
                                 </span>
-                                <div class="hdr-btm-nav d-flex d-none">
+                                <div id="list5" class="hdr-btm-nav d-flex d-none">
                                     <div class="col-lg-5 col-xl-4">
                                         <div class="d-flex flex-wrap">
                                             <i></i>
@@ -300,10 +300,10 @@
                                 </div>
                             </li>
                             <li>
-                                <span>
+                                <span class="hvr-span6">
                                     <a href="https://abb-bank.az/az/ferdi/cari-hesab">Cari hesab</a>
                                 </span>
-                                <div class="hdr-btm-nav d-flex d-none">
+                                <div id="list6" class="hdr-btm-nav d-flex d-none">
                                     <div class="col-lg-5 col-xl-4">
                                         <div class="d-flex flex-wrap">
                                             <i></i>
@@ -332,10 +332,10 @@
                                 </div>
                             </li>
                             <li>
-                                <span>
+                                <span class="hvr-span7">
                                     <a href="https://abb-bank.az/az/ferdi/elektron-xidmetler">Elektron xidmətlər</a>
                                 </span>
-                                <div class="hdr-btm-nav d-flex d-none">
+                                <div id="list7" class="hdr-btm-nav d-flex d-none">
                                     <div class="col-lg-5 col-xl-4">
                                         <div class="d-flex flex-wrap">
                                             <i></i>
@@ -401,34 +401,40 @@
                                 </div>
                             </li>
                             <li>
-                                <span>
+                                <span class="hvr-span8">
                                     <a href="https://abb-bank.az/az/ferdi/bank-24-7">Bank 24/7</a>
                                 </span>
-                                <div class="hdr-btm-nav d-flex d-none">
+                                <div id="list8" class="hdr-btm-nav d-flex d-none">
                                     <div class="col-lg-5 col-xl-4">
                                         <div class="d-flex flex-wrap">
                                             <i></i>
                                             <span class="mb-3 col-6"><a
-                                                href="https://abb-bank.az/az/ferdi/bank-24-7/melumat-merkezi">Məlumat Mərkəzi 24/7
-                                                    </a></span>
-                                            <span class="mb-3 col-6"><a 
-                                                href="https://abb-bank.az/az/ferdi/bank-24-7/cash-in-atmi">Cash-In ATM-i
-                                                    </a></span>
+                                                    href="https://abb-bank.az/az/ferdi/bank-24-7/melumat-merkezi">Məlumat
+                                                    Mərkəzi 24/7
+                                                </a></span>
                                             <span class="mb-3 col-6"><a
-                                                href="https://abb-bank.az/az/ferdi/bank-24-7/odenis-terminali">Ödəniş terminalı
-                                                    </a></span>
+                                                    href="https://abb-bank.az/az/ferdi/bank-24-7/cash-in-atmi">Cash-In
+                                                    ATM-i
+                                                </a></span>
                                             <span class="mb-3 col-6"><a
-                                                href="https://abb-bank.az/az/ferdi/bank-24-7/atm">ATM
-                                                    </a></span>
+                                                    href="https://abb-bank.az/az/ferdi/bank-24-7/odenis-terminali">Ödəniş
+                                                    terminalı
+                                                </a></span>
                                             <span class="mb-3 col-6"><a
-                                                href="https://abb-bank.az/az/ferdi/bank-24-7/ibabanking-internet-bank">ABB Banking - İnternet Bank
-                                                    </a></span>
+                                                    href="https://abb-bank.az/az/ferdi/bank-24-7/atm">ATM
+                                                </a></span>
                                             <span class="mb-3 col-6"><a
-                                                href="https://ibar.az/az/ferdi/bank-24-7/iba-mobile">ABB mobile - Mobil Bank
-                                                    </a></span>
+                                                    href="https://abb-bank.az/az/ferdi/bank-24-7/ibabanking-internet-bank">ABB
+                                                    Banking - İnternet Bank
+                                                </a></span>
                                             <span class="mb-3 col-6"><a
-                                                href="https://abb-bank.az/az/senbe-gunu-xidmetinizdeyik">Şənbə günü fəaliyyət göstərən filiallar
-                                                    </a></span>
+                                                    href="https://ibar.az/az/ferdi/bank-24-7/iba-mobile">ABB mobile -
+                                                    Mobil Bank
+                                                </a></span>
+                                            <span class="mb-3 col-6"><a
+                                                    href="https://abb-bank.az/az/senbe-gunu-xidmetinizdeyik">Şənbə günü
+                                                    fəaliyyət göstərən filiallar
+                                                </a></span>
                                         </div>
                                     </div>
                                     <div
@@ -440,9 +446,7 @@
                                         <div class="hdr-btm-img-nav ms-4">
                                             <h4>İlklərdən ol!</h4>
                                             <span>Apple Pay ilə ödənişlərini sadə, sürətli və təhlükəsiz apar</span>
-                                            <a class="btn "
-                                            href="https://abb-bank.az/az/applepay"
-                                                target="_blank">Daha
+                                            <a class="btn " href="https://abb-bank.az/az/applepay" target="_blank">Daha
                                                 ətraflı</a>
                                         </div>
                                     </div>
@@ -462,7 +466,7 @@
                                 <span>
                                     <a href="https://abb-bank.az/az/ferdi/kampaniyalar">Kampaniyalar</a>
                                 </span>
-                                
+
                             </li>
                         </ul>
                     </nav>
@@ -714,6 +718,117 @@
         </section>
         <!-- burger-menu sec end -->
     </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+        <!-- slider section start -->
+        <section id="slider-sec">
+            <div class="container">
+                <div class="sldr-all">
+                    <div class="sldr-wrapper">
+                        <div id="slide1" class="sldr-slide">
+                            <div class="slide row">
+                                <div class="col-lg-4 row">
+                                    <div class="text-center text-lg-start">
+                                        <h3>
+                                            Hər kəsə 11.9% ilə nağd kredit!
+                                        </h3>
+                                        <h5>
+                                            35000 AZN-dək nağd krediti komissiyasız, zaminsiz 60 ayadək müddətə tam
+                                            onlayn əldə edin!
+                                            (FİFD min. 11.9% - max. 26.9%)
+                                        </h5>
+                                        <a class="btn" href="https://kredit.abb-bank.az/cash-loan?utm_source=abb-bank.az&utm_medium=home-slider&utm_campaign=nagdkreditaz">Kredit alın</a>
+                                    </div>
+                                </div>
+                                <div class="slide-img col-lg-8">
+                                    <div class="slide-img1 d-flex align-items-end justify-content-center justify-content-lg-end">
+                                        <div class="slide-img2">
+                                            <img src="./images/1677672815_png6.webp" alt="kredit-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="slide2" class="sldr-slide d-none">
+                            <div class="slide row">
+                                <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="text-center text-lg-start">
+                                        <h3>
+                                            Gəncliyini tam yaşa
+                                        </h3>
+                                        <h5>
+                                            Pulsuz sifariş edin, ödənişlərdə 5% keşbek qazanın, komissiyasız köçürmə və nağdlaşdırmadan faydalanın!
+                                        </h5>
+                                        <a class="btn" href="https://abb-bank.az/tamgenc/?utm_source=abb-bank.az&utm_medium=home-slider&utm_campaign=tamgenc">Sifariş et</a>
+                                    </div>
+                                </div>
+                                <div class="slide-img col-lg-8">
+                                    <div class="slide-img1 d-flex align-items-end justify-content-center justify-content-lg-end">
+                                        <div class="slide-img2">
+                                            <img src="./images/1669359168_new-project1.webp" alt="tamgenc-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="slide3" class="sldr-slide d-none">
+                            <div class="slide row">
+                                <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="text-center text-lg-start">
+                                        <h3>
+                                            İpoteka Krediti
+                                        </h3>
+                                        <h5>
+                                            İllik 6%-dən başlayaraq 500 000 AZN-dək ipoteka krediti
+                                        </h5>
+                                        <a class="btn" href="https://abb-bank.az/az/ferdi/kreditler/daxili-ipoteka-krediti">Sifariş edin</a>
+                                    </div>
+                                </div>
+                                <div class="slide-img col-lg-8">
+                                    <div class="slide-img1 d-flex align-items-end justify-content-center justify-content-lg-end">
+                                        <div class="slide-img2">
+                                            <img src="./images/1676870455_abb-png.webp" alt="ipoteka-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="slide4" class="sldr-slide d-none">
+                            <div class="slide row">
+                                <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="text-center text-lg-start">
+                                        <h3>
+                                            TamKartla 24 ayadək taksit!
+                                        </h3>
+                                        <h5>
+                                            15 000 AZN-dək kredit limiti ilə kartınızı indi onlayn alın!
+                                        </h5>
+                                        <a class="btn" href="https://kredit.abb-bank.az/tamkart?utm_source=abb-bank.az&utm_medium=home-slider&utm_campaign=24_ay_taksit"> TamKart sifariş edin </a>
+                                    </div>
+                                </div>
+                                <div class="slide-img col-lg-8">
+                                    <div class="slide-img1 d-flex align-items-end justify-content-center justify-content-lg-end">
+                                        <div class="slide-img2">
+                                            <img src="./images/1659702248_abb-bankbanner-1.webp" alt="taksit-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-btn d-flex justify-content-center justify-content-lg-start">
+                        <span class="sldr-btn" id="1"></span>
+                        <span class="sldr-btn" id="2"></span>
+                        <span class="sldr-btn" id="3"></span>
+                        <span class="sldr-btn" id="4"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slider section end -->
+    </main>
+    <!-- main end -->
     <script src="./js/app.js"></script>
 </body>
 

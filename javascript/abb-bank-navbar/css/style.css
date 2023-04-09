@@ -30,6 +30,26 @@
   .hdr-abb-logo a img {
     height: 50px;
   }
+  .sldr-all .sldr-wrapper {
+    height: 524px;
+  }
+  .sldr-all .sldr-wrapper .sldr-slide .slide {
+    height: 500px;
+  }
+  .sldr-all .sldr-wrapper .sldr-slide .slide h3 {
+    margin-bottom: 1.5rem;
+    font-size: 50px;
+  }
+  .sldr-all .sldr-wrapper .sldr-slide .slide a {
+    padding: 15px 35px;
+    margin-top: 1.5rem;
+  }
+  .sldr-all .sldr-wrapper .sldr-slide .slide .slide-img .slide-img1 .slide-img2 img {
+    height: 500px;
+  }
+  .sldr-all .slide-btn {
+    margin-bottom: 3rem;
+  }
 }
 @media (max-width: 992px) {
   .hdr-top-left {
@@ -50,11 +70,28 @@
   #hdr-bottom2 {
     display: none;
   }
+  .slide h3 {
+    font-size: 35px;
+  }
+  .slide h5 {
+    font-size: 17px;
+    margin: 10px 0;
+  }
+  .slide a {
+    padding: 15px 25px;
+  }
 }
 @media (min-width: 768px) {
   .inp {
     font-size: 40px;
     height: 75px;
+  }
+  .slide h3 {
+    line-height: 54px;
+    font-size: 40px;
+  }
+  .slide h5 {
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
@@ -78,7 +115,10 @@
   background-color: #f6f7f8;
   overflow: hidden;
 }
-#hdr-top .hdr-top-left .hdr-top-btn a {
+#hdr-top .hdr-all {
+  height: 60px;
+}
+#hdr-top .hdr-all .hdr-top-left .hdr-top-btn a {
   color: #0056c1;
   text-decoration: none;
   border: 1px solid #0056c1;
@@ -88,88 +128,97 @@
   transition: 0.3s;
   font-weight: 600;
 }
-#hdr-top .hdr-top-left .hdr-top-btn a:hover {
+#hdr-top .hdr-all .hdr-top-left .hdr-top-btn a:hover {
   background-color: #0056c1;
   color: white;
 }
-#hdr-top .hdr-top-left .hdr-top-a a {
+#hdr-top .hdr-all .hdr-top-left .hdr-top-a a {
   color: #666;
   text-decoration: none;
   font-size: 14px;
   margin: 0 8px;
 }
-#hdr-top .hdr-top-left .hdr-top-a a:hover {
+#hdr-top .hdr-all .hdr-top-left .hdr-top-a a:hover {
   text-decoration: underline;
 }
-#hdr-top .mobil-hdr {
-  color: #666;
+#hdr-top .hdr-all .mobil-hdr {
+  color: #262626;
 }
-#hdr-top .mobil-hdr h4 {
+#hdr-top .hdr-all .mobil-hdr h4 {
   font-size: 18px;
 }
-#hdr-top .mobil-hdr .arrow-hdr {
+#hdr-top .hdr-all .mobil-hdr .arrow-hdr {
   background-image: url("https://abb-bank.az/img/icons/select-arrow-down.svg");
-  width: 17px;
+  background-size: contain;
   height: 11px;
   background-repeat: no-repeat;
   rotate: 180deg;
   padding-left: 20px;
 }
-#hdr-top .hdr-top-right span {
+#hdr-top .hdr-all .hdr-top-right span {
   font-size: 14px;
+  opacity: 0.7;
 }
-#hdr-top .hdr-top-right a {
+#hdr-top .hdr-all .hdr-top-right a {
   text-decoration: none;
-  color: #666;
+  color: #262626;
 }
-#hdr-top .hdr-top-right a span {
+#hdr-top .hdr-all .hdr-top-right a span {
   font-size: 16px;
   font-weight: 600;
 }
-#hdr-top .hdr-top-right a .icon-phone {
+#hdr-top .hdr-all .hdr-top-right a .icon-phone {
   background-image: url("https://abb-bank.az/img/icons/phone.svg");
   background-repeat: no-repeat;
   width: 20px;
 }
-#hdr-top .hdr-top-right .lang {
+#hdr-top .hdr-all .hdr-top-right .lang {
   position: relative;
 }
-#hdr-top .hdr-top-right .lang .lang-view {
+#hdr-top .hdr-all .hdr-top-right .lang .lang-view {
   cursor: pointer;
 }
-#hdr-top .hdr-top-right .lang .lang-view span {
+#hdr-top .hdr-all .hdr-top-right .lang .lang-view span {
   font-size: 14px;
   color: #666;
+  opacity: 0.7;
 }
-#hdr-top .hdr-top-right .lang .lang-view .lang-arrow {
+#hdr-top .hdr-all .hdr-top-right .lang .lang-view .lang-arrow {
   background-image: url("https://abb-bank.az/img/icons/select-arrow-down.svg");
   display: inline-block;
-  width: 17px;
+  background-size: contain;
+  width: 13px;
   height: 11px;
   background-repeat: no-repeat;
   transition: 0.5s;
   rotate: 180deg;
 }
-#hdr-top .hdr-top-right .lang .lang-view .lang-arrow.rotate {
+#hdr-top .hdr-all .hdr-top-right .lang .lang-view .lang-arrow.rotate {
   transform: rotate(180deg);
 }
-#hdr-top .hdr-top-right .lang .lang-all div {
+#hdr-top .hdr-all .hdr-top-right .lang .lang-all {
+  left: auto;
+  right: 80px;
+  width: 160px;
+  top: 70px;
+}
+#hdr-top .hdr-all .hdr-top-right .lang .lang-all div {
   display: flex;
   gap: 5px;
   padding: 20px 100px 20px 20px;
 }
-#hdr-top .hdr-top-right .lang .lang-all div:hover {
+#hdr-top .hdr-all .hdr-top-right .lang .lang-all div:hover {
   background-color: #f5f5f5;
 }
-#hdr-top .hdr-top-right .lang .lang-all div img {
+#hdr-top .hdr-all .hdr-top-right .lang .lang-all div img {
   width: 24px;
   height: 24px;
 }
-#hdr-top .hdr-top-right .lang .lang-all div a {
+#hdr-top .hdr-all .hdr-top-right .lang .lang-all div a {
   font-size: 16px;
   color: #666;
 }
-#hdr-top .hdr-top-right .lang .lang-all i {
+#hdr-top .hdr-all .hdr-top-right .lang .lang-all i {
   -webkit-clip-path: polygon(50% 0%, 11% 68%, 90% 68%);
           clip-path: polygon(50% 0%, 11% 68%, 90% 68%);
   width: 20px;
@@ -179,17 +228,17 @@
   top: -14px;
   right: 18px;
 }
-#hdr-top .hdr-top-right .search {
-  margin-right: 2rem;
+#hdr-top .hdr-all .hdr-top-right .search {
+  margin-right: 1.5rem;
   cursor: pointer;
 }
-#hdr-top .hdr-top-right .search .search-icon {
+#hdr-top .hdr-all .hdr-top-right .search .search-icon {
   background-image: url("https://abb-bank.az/img/icons/search.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  padding-right: 1.5rem;
+  height: 14px;
+  padding-right: 1.3rem;
 }
 
 #hdr-bottom {
@@ -272,6 +321,12 @@
   cursor: pointer;
 }
 
+.all-burger {
+  background-color: white;
+  z-index: 99999;
+  overflow-y: scroll;
+  height: calc(100% - 126px);
+}
 .all-burger .burger-int {
   background-color: #0056c1;
   padding: 0.5rem;
@@ -382,6 +437,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  transition: 0.5;
 }
 #hdr-bottom2 .hdr-btm2-nav nav ul li a {
   color: #17253a;
@@ -398,7 +454,7 @@
   left: 0;
   width: 100%;
   padding: 40px 0 40px 50px;
-  z-index: 10;
+  z-index: 1000;
 }
 #hdr-bottom2 .hdr-btm2-nav nav ul .hdr-btm-nav span a {
   font-size: 17px;
@@ -456,4 +512,84 @@
 #hdr-bottom2 .hdr-btm2-nav nav ul .hdr-btm-nav .hdr-btm-img .hdr-btm-img-nav a:hover {
   background-color: #262626;
   color: #fff;
+}
+
+#slider-sec {
+  background: linear-gradient(90deg, #E1EBFF 9.88%, #AFB9CD 92.09%);
+}
+#slider-sec .sldr-all {
+  cursor: grab;
+  overflow: visible;
+  height: auto;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+#slider-sec .sldr-all .sldr-wrapper {
+  align-items: flex-start;
+  transition-property: transform, height;
+  box-sizing: content-box;
+  display: flex;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+#slider-sec .sldr-all .sldr-wrapper .sldr-slide {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  height: auto;
+  flex-shrink: 0;
+  position: relative;
+}
+#slider-sec .sldr-all .sldr-wrapper .sldr-slide .slide h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-top: 3rem;
+}
+#slider-sec .sldr-all .sldr-wrapper .sldr-slide .slide h5 {
+  font-weight: 500;
+}
+#slider-sec .sldr-all .sldr-wrapper .sldr-slide .slide a {
+  font-weight: 500;
+  border: 1px solid #262626;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+#slider-sec .sldr-all .sldr-wrapper .sldr-slide .slide a:hover {
+  background-color: #262626;
+  color: #fff;
+}
+#slider-sec .sldr-all .sldr-wrapper .sldr-slide .slide .slide-img {
+  padding-top: 1.5rem;
+}
+#slider-sec .sldr-all .sldr-wrapper .sldr-slide .slide .slide-img .slide-img1 {
+  height: 100%;
+}
+#slider-sec .sldr-all .sldr-wrapper .sldr-slide .slide .slide-img .slide-img1 .slide-img2 {
+  position: relative;
+  overflow: hidden;
+}
+#slider-sec .sldr-all .sldr-wrapper .sldr-slide .slide .slide-img .slide-img1 .slide-img2 img {
+  display: block;
+  max-width: 100%;
+}
+#slider-sec .sldr-all .slider-btn {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+}
+#slider-sec .sldr-all .slider-btn .sldr-btn {
+  background-color: #fff;
+  cursor: pointer;
+  height: 8px;
+  border-radius: 10px;
+  margin-right: 20px;
+  position: relative;
+  width: 35px;
+  z-index: 99;
 }/*# sourceMappingURL=style.css.map */
