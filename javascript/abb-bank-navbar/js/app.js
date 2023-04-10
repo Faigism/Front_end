@@ -118,7 +118,7 @@ let navSpan1 = document.querySelector('.hvr-span1');
 navSpan1.onmouseover = function(){
   navSpan1.style.borderBottom = "2px solid blue";
   navList1.classList.remove('d-none');
-  navSpan1.onmouseleave = function(){
+  navList1.onmouseleave = function(){
   navList1.classList.add('d-none')
   navSpan1.style.borderBottom = "none";
   }
@@ -129,7 +129,7 @@ let navSpan2 = document.querySelector('.hvr-span2');
 navSpan2.onmouseover = function(){
   navSpan2.style.borderBottom = "2px solid blue";
   navList2.classList.remove('d-none');
-  navSpan2.onmouseleave = function(){
+  navList2.onmouseleave = function(){
   navList2.classList.add('d-none')
   navSpan2.style.borderBottom = "none";
   }
@@ -140,7 +140,7 @@ let navSpan3 = document.querySelector('.hvr-span3');
 navSpan3.onmouseover = function(){
   navSpan3.style.borderBottom = "2px solid blue";
   navList3.classList.remove('d-none');
-  navSpan3.onmouseleave = function(){
+  navList3.onmouseleave = function(){
   navList3.classList.add('d-none')
   navSpan3.style.borderBottom = "none";
   }
@@ -151,7 +151,7 @@ let navSpan4 = document.querySelector('.hvr-span4');
 navSpan4.onmouseover = function(){
   navSpan4.style.borderBottom = "2px solid blue";
   navList4.classList.remove('d-none');
-  navSpan4.onmouseleave = function(){
+  navList4.onmouseleave = function(){
   navList4.classList.add('d-none')
   navSpan4.style.borderBottom = "none";
   }
@@ -162,7 +162,7 @@ let navSpan5 = document.querySelector('.hvr-span5');
 navSpan5.onmouseover = function(){
   navSpan5.style.borderBottom = "2px solid blue";
   navList5.classList.remove('d-none');
-  navSpan5.onmouseleave = function(){
+  navList5.onmouseleave = function(){
   navList5.classList.add('d-none')
   navSpan5.style.borderBottom = "none";
   }
@@ -173,7 +173,7 @@ let navSpan6 = document.querySelector('.hvr-span6');
 navSpan6.onmouseover = function(){
   navSpan6.style.borderBottom = "2px solid blue";
   navList6.classList.remove('d-none');
-  navSpan6.onmouseleave = function(){
+  navList6.onmouseleave = function(){
   navList6.classList.add('d-none')
   navSpan6.style.borderBottom = "none";
   }
@@ -184,7 +184,7 @@ let navSpan7 = document.querySelector('.hvr-span7');
 navSpan7.onmouseover = function(){
   navSpan7.style.borderBottom = "2px solid blue";
   navList7.classList.remove('d-none');
-  navSpan7.onmouseleave = function(){
+  navList7.onmouseleave = function(){
   navList7.classList.add('d-none')
   navSpan7.style.borderBottom = "none";
   }
@@ -195,7 +195,7 @@ let navSpan8 = document.querySelector('.hvr-span8');
 navSpan8.onmouseover = function(){
   navSpan8.style.borderBottom = "2px solid blue";
   navList8.classList.remove('d-none');
-  navSpan8.onmouseleave = function(){
+  navList8.onmouseleave = function(){
   navList8.classList.add('d-none')
   navSpan8.style.borderBottom = "none";
   }
