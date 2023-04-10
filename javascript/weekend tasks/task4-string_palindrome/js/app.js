@@ -12,5 +12,5 @@ function palinDrome(str){
     }
 }
 
-let sameLatter = 'refer'
+let sameLatter = 'borrow or rob'
 palinDrome(sameLatter)
