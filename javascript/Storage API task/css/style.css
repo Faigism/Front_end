@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+
+.card{
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+.card img{
+    height: 400px;
+    border-radius: 15px;
+}
+.card h5{
+    font-size: 17px;
+}
+.card p{
+    color: #8f8c8c;
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding-right: 15px;
+}
+.card p:hover{
+    text-decoration: underline;
+}
+.card a{
+    margin: 10px 0;
+}
+.card i{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 20px;
+    color: rgb(137, 166, 184);
+}
+.card i:hover{
+    color: red;
+}
+.card .card-text{
+    text-decoration: line-through;
+    padding-right: 5px;
+    color: rgb(59, 57, 57);
+}
+.card span{
+    font-size: 12px;
+}
+
+header{
+    background-color: rgb(171, 163, 159);
+    padding: 20px;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+a{
+    text-decoration: none;
+}
+header a{
+    font-size: 20px;
+    color: #fff;
+}
+header img{
+    width: 70px;
+    border-radius: 15px;
+}
+header i{
+    font-size: 25px;
+}
+header i span{
+    font-size: 15px;
+    position: absolute;
+}
+.alert-box{
+    background-color:rgb(0, 128, 122);
+    text-align: center;
+    color: #fff;
+    width: 15%;
+    position: absolute;
+    position: fixed;
+    bottom: 20px;
+    right: -15%;
+    border-radius: 5px;
+    transition: 2s;
+    font-weight: bold;
+    z-index: 99;
+}
+body{
+    overflow-x: hidden;
+}
+.card-basket input{
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 34px;
+    text-align: center;
+    font-size: 14px;
+    color: #4a4a4a;
+    border-top: solid 1px #e6e6e6;
+    border-bottom: solid 1px #e6e6e6;
+    background-color: #ffffff;
+}
+.card-basket button{
+    border: 1px solid #e6e6e6;
+    background-color: #fafafa;
+    width: 24px;
+    height: 34px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.card-basket a{
+    margin-left: 3rem;
+}
